@@ -38,6 +38,8 @@
     {"id":{"name":"obj_testPlayer","path":"objects/obj_testPlayer/obj_testPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
+    {"id":{"name":"Building","path":"sprites/Building/Building.yy",},},
+    {"id":{"name":"Door","path":"sprites/Door/Door.yy",},},
     {"id":{"name":"SmallProps","path":"sprites/SmallProps/SmallProps.yy",},},
     {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
     {"id":{"name":"PropTiles","path":"tilesets/PropTiles/PropTiles.yy",},},
