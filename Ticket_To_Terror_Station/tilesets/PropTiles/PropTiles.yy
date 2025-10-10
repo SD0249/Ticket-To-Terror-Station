@@ -1,25 +1,25 @@
 {
   "$GMTileSet":"v1",
-  "%Name":"SmallProps",
+  "%Name":"PropTiles",
   "autoTileSets":[],
   "macroPageTiles":{
     "SerialiseHeight":0,
     "SerialiseWidth":0,
     "TileSerialiseData":[],
   },
-  "name":"SmallProps",
+  "name":"PropTiles",
   "out_columns":3,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",
   "spriteId":{
-    "name":"Sprite1",
-    "path":"sprites/Sprite1/Sprite1.yy",
+    "name":"SmallProps",
+    "path":"sprites/SmallProps/SmallProps.yy",
   },
   "spriteNoExport":true,
   "textureGroupId":{
@@ -34,5 +34,5 @@
   "tileWidth":280,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":8,
+  "tile_count":10,
 }
