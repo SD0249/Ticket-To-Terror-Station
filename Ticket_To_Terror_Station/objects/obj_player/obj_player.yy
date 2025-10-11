@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Player_Right",
+    "path":"sprites/Player_Right/Player_Right.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
