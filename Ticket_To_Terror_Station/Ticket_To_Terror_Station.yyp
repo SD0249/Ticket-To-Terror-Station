@@ -35,6 +35,9 @@
   },
   "name":"Ticket_To_Terror_Station",
   "resources":[
+    {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
+    {"id":{"name":"obj_breaker","path":"objects/obj_breaker/obj_breaker.yy",},},
+    {"id":{"name":"obj_building","path":"objects/obj_building/obj_building.yy",},},
     {"id":{"name":"obj_testPlayer","path":"objects/obj_testPlayer/obj_testPlayer.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
