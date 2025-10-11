@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-trash = [] // put refer to trash in scene in here 
+trash = ds_list_create();
 
 trashCount = 0; // amount of trash in scene will decrease, task complete when 0
 
