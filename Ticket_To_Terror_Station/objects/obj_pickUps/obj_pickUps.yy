@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_lightNoBulb",
+  "%Name":"obj_pickUps",
   "eventList":[],
   "managed":true,
-  "name":"obj_lightNoBulb",
+  "name":"obj_pickUps",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interactiveItms",
-    "path":"objects/obj_interactiveItms/obj_interactiveItms.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"LightNoBulb",
-    "path":"sprites/LightNoBulb/LightNoBulb.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
