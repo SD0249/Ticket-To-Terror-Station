@@ -54,6 +54,8 @@
     {"id":{"name":"obj_trashCan","path":"objects/obj_trashCan/obj_trashCan.yy",},},
     {"id":{"name":"taskManager","path":"objects/taskManager/taskManager.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"CreateTasks","path":"scripts/CreateTasks/CreateTasks.yy",},},
+    {"id":{"name":"DaySetUp","path":"scripts/DaySetUp/DaySetUp.yy",},},
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
     {"id":{"name":"Box","path":"sprites/Box/Box.yy",},},
     {"id":{"name":"Breaker","path":"sprites/Breaker/Breaker.yy",},},

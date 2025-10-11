@@ -3,7 +3,14 @@ event_inherited();
 
 waterOn = false;
 
-pipes = [] // place pipe references in here
+
+// gather all ids to pipes in scene 
+pipesInstances = ds_list_create(); 
+
+with (obj_pipe)
+{
+    ds_list_add(obj_spigot.pipesInstances, id);
+}
 
 brokenPipes = 0; // number of broken pipes in scene
 
