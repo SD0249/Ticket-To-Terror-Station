@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_building",
+  "%Name":"obj_ladder",
   "eventList":[],
   "managed":true,
-  "name":"obj_building",
+  "name":"obj_ladder",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Building",
-    "path":"sprites/Building/Building.yy",
+    "name":"Ladder",
+    "path":"sprites/Ladder/Ladder.yy",
   },
   "spriteMaskId":null,
   "visible":true,

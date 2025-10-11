@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_building",
+  "%Name":"obj_spigot",
   "eventList":[],
   "managed":true,
-  "name":"obj_building",
+  "name":"obj_spigot",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Building",
-    "path":"sprites/Building/Building.yy",
+    "name":"Spigot",
+    "path":"sprites/Spigot/Spigot.yy",
   },
   "spriteMaskId":null,
   "visible":true,
