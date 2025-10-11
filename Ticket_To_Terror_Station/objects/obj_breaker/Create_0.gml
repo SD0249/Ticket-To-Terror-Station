@@ -1,6 +1,8 @@
 lightsOn = true;
 lightColor = c_blue; // change to actual blue color 
 
+lowerSanity = 10;
+
 event_inherited();
 
 // breakers interact 
