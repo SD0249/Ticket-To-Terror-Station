@@ -1,2 +1,2 @@
-interact = function() { }
+Interact = function() { }
 	

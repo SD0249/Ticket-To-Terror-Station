@@ -4,7 +4,7 @@ lightColor = c_blue; // change to actual blue color
 event_inherited();
 
 // breakers interact 
-interact() {
+Interact() {
     
     // turn on and off lights 
     // ==== reach goal ==== 
