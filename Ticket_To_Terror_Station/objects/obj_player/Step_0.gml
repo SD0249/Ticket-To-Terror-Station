@@ -50,4 +50,11 @@ if (locked == false)
         currentPickupable = noone;
         inventory.Hold();
     }
+    
+    // Drops held item when x is released
+    else if (inventory != noone && keyboard_check_released(ord("X")))
+    {
+        inventory.Drop();
+        inventory = noone;
+    }
 }
