@@ -20,3 +20,20 @@ collisionTiles = layer_tilemap_get_id("Tiles_Collision");
 // }	
 // 
 // state = player.idle;
+
+// Transition between station and office
+// REWORK THIS
+function GoThroughDoor()
+{
+    // Exits if already switching or just switched rooms
+    if (instance_exists(obj_switcher_station_office))
+    {
+        exit;
+    }
+    
+    // Creates a switcher then switches to new room
+    var roomSwitcher = instance_create_depth(0,0,0, obj_switcher_station_office);
+    roomSwitcher.playerData = self;
+    roomSwitcher.previousRoom = room;
+    room_goto(Room_Office);
+}

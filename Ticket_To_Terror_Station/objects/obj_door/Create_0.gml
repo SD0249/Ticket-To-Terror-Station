@@ -7,6 +7,7 @@ Interact = function (_pickUp)  {
     
     if(!isLocked) {
         // change scene to inside building 
+        playerRef.GoThroughDoor();
     }
     else {
         // play sound effect of player trying to open door
