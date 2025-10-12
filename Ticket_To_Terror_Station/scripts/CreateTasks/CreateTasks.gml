@@ -1,13 +1,7 @@
 // Create trash task 
 function TrashTask()
 {
-    var trashCanID;
-    
-    with (obj_trashCan) {
-        ds_list_add(taskManager.dailyTasks, id);
-        id.isDone = false;
-        trashCanID = id;
-    }
+    var trashCan = instance_find(obj_trashCan, 0);
     
     // create trash in scene at loaction 
     var posX = 10;
@@ -15,53 +9,44 @@ function TrashTask()
     var posZ = 1;
     var trashID = instance_create_layer(posX, posY, "Instances", obj_trash);
     
-    // add trash to list 
-    ds_list_add(trashCanID.trash, trashID);
-    
-    
+    trashCan.trashCount = 1;
 }
 
 function SpigotTask()
 {
-    var spigotID;
-    
-    with (obj_spigot) {
-        ds_list_add(taskManager.dailyTasks, id);
-        id.isDone = false;
-        spigotID = id;
-    }
-    
-    // make a random number of pipes broken
-    // 1 to 4 pipes will be broken
-    for(var i = 0; i < 4; i++)
-    {
-        var rng = irandom(ds_list_size(spigotID.pipesInstances)-1);
+    // finds spigot
+    var spigot = instance_find(obj_spigot, 0);
+
+    // 33% chance to break each pipe, 
+    with (obj_pipe) {
         
-        ds_list_find_value(spigotID.pipesInstances, rng).isBroken = true;
+        var rng = irandom(2);
+        
+        // 33% chance to create broken pipe
+        if (rng > 0 ) {
+            id.isBroken = true;
+            spigot.brokenPipes++;
+        }
     }
     
+        // 1 pipe is guaranteed to be broken 
+    if(spigot.brokenPipes == 0) {
+        var pipe = instance_find(obj_pipe, 0);
+        pipe.isBroken = true;
+        spigot.brokenPipes++;
+    }
     
 }
 
 function LightsTask()
 {
-   var breakerID;
+   var breaker = instance_find(obj_breaker, 0);
     
-    with (obj_breaker) {
-        ds_list_add(taskManager.dailyTasks, id);
-        id.isDone = false;
-        breakerID = id;
-    } 
-    
-    // break all lights
-    for(var i = 0; i < 4; i++)
-    {
-        // change sprite index to no light buld 
-        var currentLight = ds_list_find_value(breakerID.lights, i)
-        currentLight.image_index = 1;
-        currentLight.canBeFixed = true;
+    with (obj_light) {
+        id.image_index = 1;
+        id.canBeFixed = true;
+        breaker.lightsBroken++;
     }
     
-    breakerID.SwitchLights();
-    breakerID.lightsBroken = 4;
+    breaker.SwitchLights();
 }

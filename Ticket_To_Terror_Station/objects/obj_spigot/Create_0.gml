@@ -3,16 +3,7 @@ event_inherited();
 
 waterOn = false;
 
-
-// gather all ids to pipes in scene 
-pipesInstances = ds_list_create(); 
-
-with (obj_pipe)
-{
-    ds_list_add(obj_spigot.pipesInstances, id);
-}
-
-brokenPipes = 0; // number of broken pipes in scene
+brokenPipes = 0; // changed in pipes
 
 Interact = function (_pickUp) {
     
@@ -27,4 +18,3 @@ Interact = function (_pickUp) {
     }
         
 }
-

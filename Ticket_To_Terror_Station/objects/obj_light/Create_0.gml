@@ -12,13 +12,12 @@ Interact = function (_pickUp)  {
         //if (inventoryItem == obj_lightBulb)
         image_index = 0;
         obj_breaker.lightsBroken--;
-        
+        canBeFixed = false;
         
         if(obj_breaker.lightsBroken == 0)
         {
-            canBeFixed = false;
-            isDone = true;
-            obj_breaker.SwitchLights();
+            taskManager.tasksCount--;
+            obj_breaker.SwitchLights(); // turn lights on to indicate task complete
         }
     }
 }

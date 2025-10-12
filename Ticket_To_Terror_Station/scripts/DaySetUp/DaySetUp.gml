@@ -3,6 +3,9 @@
 // ex: CreateTasks.Trash();
 function Day1(){
     TrashTask();
+    
+    // equal to how many tasks created
+    taskManager.tasksCount = 1;
 }
 function Day2(){
 }

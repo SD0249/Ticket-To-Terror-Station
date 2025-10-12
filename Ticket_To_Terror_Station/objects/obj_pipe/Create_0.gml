@@ -3,8 +3,17 @@ event_inherited();
 isBroken = false;
 
 Interact = function (_pickUp)  {
-    // if pipe is broken 
-    // if player has wrench 
-    // fix pipe 
-    // stop water from flowing out (visual sprite) (might do a quick 3 frame animation
+    
+    if(isBroken) {
+        //if (_pickUp == obj_wrench)
+        isBroken = true;
+        
+        var spigot = instance_find(obj_spigot, 0);
+        spigot.brokenPipes--;
+    
+        if(spigot.brokenPipe == 0) {
+            id.Interact(_pickUp);  // to turn off water 
+            taskManager.tasksCompleted++;
+        }
+    }
 }
