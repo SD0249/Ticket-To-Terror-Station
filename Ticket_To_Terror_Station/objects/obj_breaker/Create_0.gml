@@ -1,5 +1,6 @@
 lightsOn = true;
-lightColor = c_blue; // change to actual blue color 
+blueLight = make_color_rgb(66, 132, 125);
+redLight = make_color_rgb(226, 60, 71); 
 
 lowerSanity = 10;
 
