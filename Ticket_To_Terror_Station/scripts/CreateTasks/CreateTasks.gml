@@ -1,5 +1,5 @@
 // Create trash task 
-function Trash()
+function CreateTrash()
 {
     var trashCanID;
     
@@ -21,7 +21,7 @@ function Trash()
     
 }
 
-function Spigot()
+function CreateSpigot()
 {
     var spigotID;
     
@@ -40,5 +40,10 @@ function Spigot()
         ds_list_find_value(spigotID.pipesInstances, rng).isBroken = true;
     }
     
+    
+}
+
+function CreateLight()
+{
     
 }
