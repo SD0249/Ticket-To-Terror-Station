@@ -19,11 +19,11 @@ if (climbing == true)
 }
 else if (movementX < 0)
 {
-    // set sprite_index to left walking sprite
+    sprite_index = spr_player_walk_left;
 }
 else if (movementX > 0)
 {
-    // set sprite_index to right walking sprite
+    sprite_index = spr_player_walk_right;
 }
 else if (recentDirection < 0)
 {
