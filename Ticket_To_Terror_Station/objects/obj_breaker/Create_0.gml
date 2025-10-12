@@ -18,9 +18,10 @@ LightColor = function () {
 // breakers interact 
 Interact = function (_pickUp)  {
     
-    //if(inventoryItem == obj_key)
-    if(lightsBroken == 0) {
-        SwitchLights();
+    if(_pickUp == obj_key) {
+        if(lightsBroken == 0) {
+            SwitchLights();
+        }
     }
 }
 
