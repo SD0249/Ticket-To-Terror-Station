@@ -1,7 +1,9 @@
 // Inherit the parent event
 event_inherited();
 
-Hold() {
+Interact = function () {}
+
+Hold = function (_pickUp){
     // move object to correct 
     // may need resize 
     // may need to change bounds of image 

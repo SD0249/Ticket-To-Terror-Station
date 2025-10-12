@@ -11,11 +11,15 @@ Interact = function (_pickUp)  {
     if (canBeFixed) {
         //if (inventoryItem == obj_lightBulb)
         image_index = 0;
+        obj_breaker.lightsBroken--;
         
+        
+        if(obj_breaker.lightsBroken == 0)
+        {
+            canBeFixed = false;
+            isDone = true;
+            obj_breaker.SwitchLights();
+        }
     }
-    // if player has light buld 
-    // light is fixed
-    // when sprite mode is 0 lights on 
-    // when sprite mose is 1 lights are off 
 }
 
