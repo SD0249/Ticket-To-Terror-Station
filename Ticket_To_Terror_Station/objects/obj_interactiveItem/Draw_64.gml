@@ -1,0 +1,1 @@
+// place object ininventory

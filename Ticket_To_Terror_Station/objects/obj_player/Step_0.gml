@@ -48,7 +48,7 @@ if (locked == false)
     {
         inventory = currentPickupable;
         currentPickupable = noone;
-        inventory.Hold();
+        inventory.Hold(currentPickupable);
     }
     
     // Drops held item when x is released

@@ -57,7 +57,9 @@ function LightsTask()
     for(var i = 0; i < 4; i++)
     {
         // change sprite index to no light buld 
-        ds_list_find_value(breakerID.lights, i).image_index = 1;
+        var currentLight = ds_list_find_value(breakerID.lights, i)
+        currentLight.image_index = 1;
+        currentLight.canBeFixed = true;
     }
     
     breakerID.SwitchLights();
