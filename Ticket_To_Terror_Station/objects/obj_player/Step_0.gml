@@ -40,7 +40,7 @@ if (locked == false)
     // Interacts with current interactable when z is released
     if (currentInteractable != noone && keyboard_check_released(ord("Z")))
     {
-        currentInteractable.Interact(currentPickupable);
+        currentInteractable.Interact(inventory);
     }
     
     // Picks up item in range when x is released
