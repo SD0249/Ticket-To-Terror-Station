@@ -74,6 +74,8 @@
     {"id":{"name":"LightNoBulb","path":"sprites/LightNoBulb/LightNoBulb.yy",},},
     {"id":{"name":"lightSpriteSheet","path":"sprites/lightSpriteSheet/lightSpriteSheet.yy",},},
     {"id":{"name":"LightWithBuld","path":"sprites/LightWithBuld/LightWithBuld.yy",},},
+    {"id":{"name":"mop","path":"sprites/mop/mop.yy",},},
+    {"id":{"name":"officeBackground","path":"sprites/officeBackground/officeBackground.yy",},},
     {"id":{"name":"Phone","path":"sprites/Phone/Phone.yy",},},
     {"id":{"name":"Pipe","path":"sprites/Pipe/Pipe.yy",},},
     {"id":{"name":"Spigot","path":"sprites/Spigot/Spigot.yy",},},
