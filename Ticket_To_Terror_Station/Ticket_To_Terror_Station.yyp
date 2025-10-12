@@ -49,7 +49,6 @@
     {"id":{"name":"obj_lightRender","path":"objects/obj_lightRender/obj_lightRender.yy",},},
     {"id":{"name":"obj_mop","path":"objects/obj_mop/obj_mop.yy",},},
     {"id":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},},
-    {"id":{"name":"obj_pickUps","path":"objects/obj_pickUps/obj_pickUps.yy",},},
     {"id":{"name":"obj_pipe","path":"objects/obj_pipe/obj_pipe.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_spigot","path":"objects/obj_spigot/obj_spigot.yy",},},
