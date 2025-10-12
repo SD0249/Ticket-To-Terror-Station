@@ -1,2 +1,1 @@
-CreateTrash();
-    
+TrashTask();

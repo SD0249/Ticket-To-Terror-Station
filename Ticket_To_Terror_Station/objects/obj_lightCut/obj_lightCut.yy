@@ -36,5 +36,5 @@
     "path":"sprites/blueLight/blueLight.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

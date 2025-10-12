@@ -1,5 +1,5 @@
 // Create trash task 
-function CreateTrash()
+function TrashTask()
 {
     var trashCanID;
     
@@ -21,7 +21,7 @@ function CreateTrash()
     
 }
 
-function CreateSpigot()
+function SpigotTask()
 {
     var spigotID;
     
@@ -43,7 +43,23 @@ function CreateSpigot()
     
 }
 
-function CreateLight()
+function LightsTask()
 {
+   var breakerID;
     
+    with (obj_breaker) {
+        ds_list_add(taskManager.dailyTasks, id);
+        id.isDone = false;
+        breakerID = id;
+    } 
+    
+    // break all lights
+    for(var i = 0; i < 4; i++)
+    {
+        // change sprite index to no light buld 
+        ds_list_find_value(breakerID.lights, i).image_index = 1;
+    }
+    
+    breakerID.SwitchLights();
+    breakerID.lightsBroken = 4;
 }
