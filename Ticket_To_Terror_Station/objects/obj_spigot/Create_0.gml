@@ -19,13 +19,10 @@ Interact = function (_pickUp) {
     // water can only be turn off and on when all pipes are fixed 
     if (brokenPipes == 0 ) {
         
-        if (waterOn) {
-            // remove water from floor 
-            waterOn = false;
-        }
-        else {
-            // add water to floor 
-            waterOn = true;
+        waterOn = !waterOn;
+        
+        with(obj_water){
+            id.visible = obj_spigot.waterOn;
         }
     }
         

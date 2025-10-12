@@ -32,5 +32,5 @@
     "path":"sprites/water/water.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
