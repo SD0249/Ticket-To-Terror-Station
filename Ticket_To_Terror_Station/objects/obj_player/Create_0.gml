@@ -1,18 +1,22 @@
-// Player Variable SetUp
+// Fields
+currentInteractable = noone;
+currentPickupable = noone;
+inventory = noone;
+moveSpeed = 3.0;
+recentDirection = 1;
+locked = false;
+climbing = false;
+collisionTiles = layer_tilemap_get_id("Tiles_Collision");
 
-// -> Movement / Animation
-speed = 3.0;
-
-move_x = 0;
-move_y = 0;
-
-enum player {
-	idle,
-	walkLeft,
-	walkRight
-}	
-
-state = player.idle;
-
-// More variables to be added if needed
-
+// Not needed unless state needs to be accessed for something
+//     other than determining which animation should play
+//
+// // Movement/animation state
+// enum player {
+// 	idle,
+// 	walkLeft,
+// 	walkRight,
+//     climb
+// }	
+// 
+// state = player.idle;
