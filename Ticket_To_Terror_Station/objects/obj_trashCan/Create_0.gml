@@ -8,7 +8,8 @@ Interact = function (_pickUp)
     if(_pickUp == obj_trash) 
     {
         trashCount--;
-        // destory trash 
+        // set players held item to noone 
+        // as the instance of the item from the scene is already gone 
         
         if(trashCount == 0) 
         {

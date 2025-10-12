@@ -9,7 +9,10 @@
     "name":"hold objects",
     "path":"folders/Objects/hold objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_interactiveItem",
+    "path":"objects/obj_interactiveItem/obj_interactiveItem.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -27,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_bottle_blue",
+    "path":"sprites/spr_bottle_blue/spr_bottle_blue.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

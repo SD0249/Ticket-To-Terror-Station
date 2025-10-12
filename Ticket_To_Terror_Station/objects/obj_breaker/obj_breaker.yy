@@ -11,8 +11,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"isPickupable","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"interactable objects",
+    "path":"folders/Objects/interactable objects.yy",
   },
   "parentObjectId":{
     "name":"obj_interactiveItem",
