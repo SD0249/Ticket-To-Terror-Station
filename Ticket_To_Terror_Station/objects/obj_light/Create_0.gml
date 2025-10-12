@@ -7,7 +7,7 @@ image_index = 0;
 
 canBeFixed = false; // only when no light buld
 
-Interact() {
+Interact = function (_pickUp)  {
     if (canBeFixed) {
         //if (inventoryItem == obj_lightBulb)
         image_index = 0;

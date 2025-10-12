@@ -2,7 +2,7 @@ event_inherited();
 
 isBroken = false;
 
-Interact() {
+Interact = function (_pickUp)  {
     // if pipe is broken 
     // if player has wrench 
     // fix pipe 

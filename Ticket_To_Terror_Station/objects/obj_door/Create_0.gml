@@ -3,7 +3,7 @@ event_inherited();
 
 isLocked = false;
 
-Interact() {
+Interact = function (_pickUp)  {
     
     if(!isLocked) {
         // change scene to inside building 

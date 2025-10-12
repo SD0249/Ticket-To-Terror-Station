@@ -5,7 +5,7 @@ trash = ds_list_create();
 
 trashCount = 0; // amount of trash in scene will decrease, task complete when 0
 
-Interact() {
+Interact = function (_pickUp)  {
     // if player is holding trash 
     // trashCount - 1
     // destory that specfic trash

@@ -3,7 +3,7 @@ isDone = true;
 playerRef = noone;
 held = false;
 
-Interact = function(){ }
+Interact = function(_pickUp){ }
 
 Hold = function() {
     // move object to correct place on bottom of screen

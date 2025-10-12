@@ -2,7 +2,7 @@
 currentInteractable = noone;
 currentPickupable = noone;
 inventory = noone;
-moveSpeed = 4.0;
+moveSpeed = 10.0;
 recentDirection = 1;
 locked = false;
 climbing = false;
