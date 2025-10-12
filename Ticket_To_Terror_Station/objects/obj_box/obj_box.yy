@@ -6,14 +6,16 @@
   ],
   "managed":true,
   "name":"obj_box",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"isPickupable","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_interactiveItms",
-    "path":"objects/obj_interactiveItms/obj_interactiveItms.yy",
+    "name":"obj_interactiveItem",
+    "path":"objects/obj_interactiveItem/obj_interactiveItem.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

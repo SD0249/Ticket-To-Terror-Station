@@ -33,3 +33,21 @@ else
 {
     // set sprite_index to right idle sprite
 }
+
+// Interact and pickup logic
+if (locked == false)
+{
+    // Interacts with current interactable when z is released
+    if (currentInteractable != noone && keyboard_check_released(ord("Z")))
+    {
+        currentInteractable.Interact();
+    }
+    
+    // Picks up item in range when x is released
+    else if (currentPickupable != noone && inventory == noone && keyboard_check_released(ord("X")))
+    {
+        inventory = currentPickupable;
+        currentPickupable = noone;
+        inventory.Hold();
+    }
+}

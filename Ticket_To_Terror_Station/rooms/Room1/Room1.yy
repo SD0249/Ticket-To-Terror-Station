@@ -72,7 +72,7 @@
           -2,1,-227,-2147483648,-2,1,-227,-2147483648,-2,1,-227,-2147483648,-2,1,-227,-2147483648,-2,1,-227,-2147483648,
           -2,1,-227,-2147483648,-2,1,-227,-2147483648,-2,1,-227,-2147483648,-2,1,-227,-2147483648,-2,1,-227,-2147483648,
           -2,1,-227,-2147483648,-2,1,-227,-2147483648,1,1,-228,-2147483648,1,1,
-        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet3","path":"tilesets/TileSet3/TileSet3.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
+        ],"TileDataFormat":1,},"tilesetId":{"name":"TileSet_Collision","path":"tilesets/TileSet_Collision/TileSet_Collision.yy",},"userdefinedDepth":false,"visible":false,"x":0,"y":0,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":true,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"largeBackground","path":"sprites/largeBackground/largeBackground.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
   "name":"Room1",

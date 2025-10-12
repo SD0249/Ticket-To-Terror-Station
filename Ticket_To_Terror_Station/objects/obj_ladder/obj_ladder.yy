@@ -12,8 +12,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_pickUps",
-    "path":"objects/obj_pickUps/obj_pickUps.yy",
+    "name":"obj_interactiveItem",
+    "path":"objects/obj_interactiveItem/obj_interactiveItem.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
