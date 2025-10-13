@@ -1,5 +1,21 @@
+// draw timer 
+var posX =view_wport/2 - sprite_get_width(spr_timerBack)/2;
+
+draw_sprite(spr_timerBack, 1, posX, 16);
+//draw_sprite_ext(spr_timerFront, 1, view_wport/2, 16, 
+//max(0, obj_timeManager. timer variable), 1, 0, c_white);
+
+// draw sanity 
+draw_sprite(spr_sanityBack, 1, posX, 64); 
+draw_sprite_ext(spr_sanityFront, 1, posX, 64, 
+                max(0, obj_player.sanity/obj_player.sanityMax), // calc fraction of bar to take up
+                1, 0, c_white, 1);
+
+
+// draw back of inventory 
 draw_sprite(inventoryHub, -1, 16, room_height/2 - 108);
 
+// draw inventory item
 switch (inventoryItem) {
 	case obj_ladder: 
         /* draw ladder inventory item */ break;

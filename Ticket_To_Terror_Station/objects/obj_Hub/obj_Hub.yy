@@ -9,8 +9,8 @@
   "name":"obj_Hub",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"hub UI",
+    "path":"folders/Objects/hub UI.yy",
   },
   "parentObjectId":null,
   "persistent":true,
