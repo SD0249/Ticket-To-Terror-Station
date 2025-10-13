@@ -74,7 +74,6 @@
     {"id":{"name":"obj_trashCan","path":"objects/obj_trashCan/obj_trashCan.yy",},},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
     {"id":{"name":"obj_wrench","path":"objects/obj_wrench/obj_wrench.yy",},},
-    {"id":{"name":"Object35","path":"objects/Object35/Object35.yy",},},
     {"id":{"name":"taskManager","path":"objects/taskManager/taskManager.yy",},},
     {"id":{"name":"Room_Office","path":"rooms/Room_Office/Room_Office.yy",},},
     {"id":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},

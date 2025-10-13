@@ -1,9 +1,10 @@
 // draw timer 
-var posX =view_wport/2 - sprite_get_width(spr_timerBack)/2;
+var posX = view_wport/2 - sprite_get_width(spr_timerBack)/2;
 
 draw_sprite(spr_timerBack, 1, posX, 16);
-//draw_sprite_ext(spr_timerFront, 1, view_wport/2, 16, 
-//max(0, obj_timeManager. timer variable), 1, 0, c_white);
+draw_sprite_ext(spr_timerFront, 1, posX, 16, 
+            max(0, obj_timeManager.timeUntilMonster/obj_timeManager.timeMax), 
+            1, 0, c_white, 1);
 
 // draw sanity 
 draw_sprite(spr_sanityBack, 1, posX, 64); 
