@@ -1,1 +1,0 @@
-draw_sprite(inventoryHub, -1, 16, room_height/2 - 8);

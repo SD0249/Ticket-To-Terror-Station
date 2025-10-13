@@ -48,6 +48,7 @@ function SpigotTask()
         // 33% chance to create broken pipe
         if (rng > 0 ) {
             id.isBroken = true;
+            id.isInteractable = true;
             spigot.brokenPipes++;
         }
     }
@@ -56,6 +57,8 @@ function SpigotTask()
     if(spigot.brokenPipes == 0) {
         var pipe = instance_find(obj_pipe, 0);
         pipe.isBroken = true;
+        pipe.isInteractable = true;
+        pipe.isInteractable = true;
         spigot.brokenPipes++;
     }
     

@@ -47,6 +47,7 @@ if (!locked)
     else if (currentPickupable != noone && inventory < 0 && keyboard_check_released(ord("X")))
     {
         inventory = currentPickupable.object_index;
+        obj_Hub.UpdateItemHub(inventory);
         instance_destroy(currentPickupable);
         currentPickupable = noone;
     }
@@ -57,5 +58,6 @@ if (!locked)
         var inst = instance_create_layer(x, y, "Instances", inventory);
         inst.y = inst.dropY;
         inventory = -1;
+        obj_Hub.UpdateItemHub(inventory);
     }
 }
