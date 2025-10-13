@@ -75,6 +75,7 @@
     {"id":{"name":"Room_Station","path":"rooms/Room_Station/Room_Station.yy",},},
     {"id":{"name":"CreateTasks","path":"scripts/CreateTasks/CreateTasks.yy",},},
     {"id":{"name":"DaySetUp","path":"scripts/DaySetUp/DaySetUp.yy",},},
+    {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
     {"id":{"name":"blueLight","path":"sprites/blueLight/blueLight.yy",},},
     {"id":{"name":"Box","path":"sprites/Box/Box.yy",},},
