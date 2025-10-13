@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_puddle",
+  "%Name":"obj_puddleTracker",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_puddle",
+  "name":"obj_puddleTracker",
   "overriddenProperties":[],
   "parent":{
-    "name":"interactable objects",
-    "path":"folders/Objects/interactable objects.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_interactiveItem",
-    "path":"objects/obj_interactiveItem/obj_interactiveItem.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_puddle",
-    "path":"sprites/spr_puddle/spr_puddle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

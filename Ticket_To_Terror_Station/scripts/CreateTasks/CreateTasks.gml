@@ -82,3 +82,12 @@ function LightsTask()
     breaker.SwitchLights();
 
 }
+
+function MopTask() 
+{
+    var tracker = instance_find(obj_puddleTracker, 0);
+    
+    // create a number of puddle objects
+    // for each puddle made tracker.puddleCount++;
+}
+
