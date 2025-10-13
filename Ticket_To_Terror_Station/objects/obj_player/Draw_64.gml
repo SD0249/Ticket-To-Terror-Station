@@ -25,13 +25,13 @@ else
 // Determine currently held item debugging text
 var debugText_held = "Currently Held: ";
 
-if (inventory == noone)
+if (inventory < 0)
 {
     debugText_held += "None";
 }
 else
 {
-    debugText_held += object_get_name(inventory.object_index);
+    debugText_held += object_get_name(inventory);
 }
 
 // Display debug text

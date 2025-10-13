@@ -1,6 +1,6 @@
 // Moves with left/right arrows and A/D keys
 var movementX = 0;
-if (locked == false)
+if (!locked)
 {
     
     movementX = (keyboard_check(vk_right) or keyboard_check(ord("D"))) 
@@ -13,7 +13,7 @@ if (locked == false)
 }
 
 // Determines which animation to play
-if (climbing == true)
+if (climbing)
 {
     // set sprite_index to climbing sprite 
 }
@@ -35,7 +35,7 @@ else
 }
 
 // Interact and pickup logic
-if (locked == false)
+if (!locked)
 {
     // Interacts with current interactable when z is released
     if (currentInteractable != noone && keyboard_check_released(ord("Z")))
@@ -44,17 +44,20 @@ if (locked == false)
     }
     
     // Picks up item in range when x is released
-    else if (currentPickupable != noone && inventory == noone && keyboard_check_released(ord("X")))
+    else if (currentPickupable != noone && inventory < 0 && keyboard_check_released(ord("X")))
     {
-        inventory = currentPickupable;
+        inventory = currentPickupable.object_index;
+        obj_Hub.UpdateItemHub(inventory);
+        instance_destroy(currentPickupable);
         currentPickupable = noone;
-        inventory.Hold(currentPickupable);
     }
     
     // Drops held item when x is released
-    else if (inventory != noone && keyboard_check_released(ord("X")))
+    else if (inventory >= 0 && keyboard_check_released(ord("X")))
     {
-        inventory.Drop();
-        inventory = noone;
+        var inst = instance_create_layer(x, y, "Instances", inventory);
+        inst.y = inst.dropY;
+        inventory = -1;
+        obj_Hub.UpdateItemHub(inventory);
     }
 }
