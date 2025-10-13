@@ -22,7 +22,6 @@ collisionTiles = layer_tilemap_get_id("Tiles_Collision");
 // state = player.idle;
 
 // Transition between station and office
-// REWORK THIS
 function GoThroughDoor()
 {
     currentInteractable = noone;

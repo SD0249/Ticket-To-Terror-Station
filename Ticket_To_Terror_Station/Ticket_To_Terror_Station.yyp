@@ -60,6 +60,7 @@
     {"id":{"name":"obj_puddle","path":"objects/obj_puddle/obj_puddle.yy",},},
     {"id":{"name":"obj_puddleTracker","path":"objects/obj_puddleTracker/obj_puddleTracker.yy",},},
     {"id":{"name":"obj_spigot","path":"objects/obj_spigot/obj_spigot.yy",},},
+    {"id":{"name":"obj_startMenu","path":"objects/obj_startMenu/obj_startMenu.yy",},},
     {"id":{"name":"obj_switcher_station_office","path":"objects/obj_switcher_station_office/obj_switcher_station_office.yy",},},
     {"id":{"name":"obj_testPlayer","path":"objects/obj_testPlayer/obj_testPlayer.yy",},},
     {"id":{"name":"obj_timeManager","path":"objects/obj_timeManager/obj_timeManager.yy",},},
@@ -111,9 +112,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"Room_Station","path":"rooms/Room_Station/Room_Station.yy",},},
-    {"roomId":{"name":"Room_Office","path":"rooms/Room_Office/Room_Office.yy",},},
     {"roomId":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},
+    {"roomId":{"name":"Room_Office","path":"rooms/Room_Office/Room_Office.yy",},},
+    {"roomId":{"name":"Room_Station","path":"rooms/Room_Station/Room_Station.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

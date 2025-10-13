@@ -9,9 +9,9 @@ else
 {
 	// If of interactable type, passes itself in as current interactable if that field is empty
     //    and it's in range or removes itself from that field if it's out of range
-    if (isInteractable == true)
+    if (isInteractable)
     {
-        if (distance_to_object(playerRef) <= range && playerRef.currentInteractable == noone)
+        if (canInteract && distance_to_object(playerRef) <= range && playerRef.currentInteractable == noone)
         {
             playerRef.currentInteractable = id;
         }
@@ -23,7 +23,7 @@ else
     
     // If of pickupable type, passes itself in as current pickupable if that
     //    field is empty and it's in range or removes itself from that field if it's out of range
-    if (isPickupable == true)
+    if (isPickupable)
     {
         if (distance_to_object(playerRef) <= range && playerRef.currentPickupable == noone)
         {
