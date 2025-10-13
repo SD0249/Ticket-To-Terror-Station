@@ -4,11 +4,10 @@
 function Day1()
 {
     TrashTask();
+    LightsTask();
     
     // equal to how many tasks created
-    taskManager.tasksCount = 1;
-
-    LightsTask();
+    taskManager.tasksCount = 2;
 
 }
 function Day2()
