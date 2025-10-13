@@ -50,6 +50,7 @@ if (!locked)
         obj_Hub.UpdateItemHub(inventory);
         instance_destroy(currentPickupable);
         currentPickupable = noone;
+        currentInteractable = noone;
     }
     
     // Drops held item when x is released
@@ -57,6 +58,11 @@ if (!locked)
     {
         var inst = instance_create_layer(x, y, "Instances", inventory);
         inst.y = inst.dropY;
+        if (room = Room_Office)
+        {
+            inst.image_xscale = 1.5;
+            inst.image_yscale = 1.5;
+        }
         inventory = -1;
         obj_Hub.UpdateItemHub(inventory);
     }
