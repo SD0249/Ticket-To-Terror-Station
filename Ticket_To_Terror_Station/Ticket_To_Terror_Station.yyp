@@ -41,6 +41,7 @@
   },
   "name":"Ticket_To_Terror_Station",
   "resources":[
+    {"id":{"name":"typewritterFont","path":"fonts/typewritterFont/typewritterFont.yy",},},
     {"id":{"name":"obj_bottleBlue","path":"objects/obj_bottleBlue/obj_bottleBlue.yy",},},
     {"id":{"name":"obj_bottleRed","path":"objects/obj_bottleRed/obj_bottleRed.yy",},},
     {"id":{"name":"obj_box","path":"objects/obj_box/obj_box.yy",},},
@@ -63,7 +64,6 @@
     {"id":{"name":"obj_pipe","path":"objects/obj_pipe/obj_pipe.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_puddle","path":"objects/obj_puddle/obj_puddle.yy",},},
-    {"id":{"name":"obj_puddleTracker","path":"objects/obj_puddleTracker/obj_puddleTracker.yy",},},
     {"id":{"name":"obj_slimeMonster","path":"objects/obj_slimeMonster/obj_slimeMonster.yy",},},
     {"id":{"name":"obj_spigot","path":"objects/obj_spigot/obj_spigot.yy",},},
     {"id":{"name":"obj_startMenu","path":"objects/obj_startMenu/obj_startMenu.yy",},},

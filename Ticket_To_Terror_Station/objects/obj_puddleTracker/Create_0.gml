@@ -1,1 +1,0 @@
-puddleCount = 0;
