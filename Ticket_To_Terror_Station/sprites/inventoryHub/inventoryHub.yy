@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Hub UI",
+    "path":"folders/Sprites/Hub UI.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

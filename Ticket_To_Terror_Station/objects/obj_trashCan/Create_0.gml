@@ -8,13 +8,15 @@ Interact = function (_pickUp)
     if(_pickUp == obj_trash) 
     {
         trashCount--;
-        // set players held item to noone 
-        // as the instance of the item from the scene is already gone 
+        
+        // remove item from inteventory 
+        obj_player.inventory = -1;
+        obj_Hub.UpdateItemHub(obj_player.inventory);
         
         if(trashCount == 0) 
         {
             taskManager.tasksCount--;
         }
-    } 
+    }
 }
 

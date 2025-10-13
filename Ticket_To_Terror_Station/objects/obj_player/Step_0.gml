@@ -50,13 +50,14 @@ if (!locked)
         obj_Hub.UpdateItemHub(inventory);
         instance_destroy(currentPickupable);
         currentPickupable = noone;
+        currentInteractable = noone;
     }
     
     // Drops held item when x is released
     else if (inventory >= 0 && keyboard_check_released(ord("X")))
     {
         var inst = instance_create_layer(x, y, "Instances", inventory);
-        inst.y = inst.dropY;
+        inst.RepositionAndScale();
         inventory = -1;
         obj_Hub.UpdateItemHub(inventory);
     }
