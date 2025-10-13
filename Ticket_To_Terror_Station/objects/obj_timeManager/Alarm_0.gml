@@ -7,5 +7,11 @@ if (room == Room_Office)
         playerRef.GoThroughDoor();
     }
 }
+
+// This doesn't work because it still thinks we're in the office,
+//    meaning the door doesn't get locked when we get pushed out
 var doorRef = instance_nearest(x, y, obj_door);
-doorRef.LockDoor();
+if (doorRef != noone)
+{
+    doorRef.LockDoor();
+}

@@ -1,10 +1,10 @@
 // Fields
 currentInteractable = noone;
 currentPickupable = noone;
-inventory = noone;
+inventory = -1;    // nonexistent obj index
 moveSpeed = 10.0;
 recentDirection = 1;
-locked = false;
+locked = true;
 climbing = false;
 collisionTiles = layer_tilemap_get_id("Tiles_Collision");
 sanity = 100;

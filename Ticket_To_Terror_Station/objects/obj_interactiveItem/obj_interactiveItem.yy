@@ -32,6 +32,7 @@
     {"$GMObjectProperty":"v1","%Name":"isInteractable","filters":[],"listItems":[],"multiselect":false,"name":"isInteractable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"isPickupable","filters":[],"listItems":[],"multiselect":false,"name":"isPickupable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"canInteract","filters":[],"listItems":[],"multiselect":false,"name":"canInteract","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"dropY","filters":[],"listItems":[],"multiselect":false,"name":"dropY","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"864","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
