@@ -6,7 +6,7 @@
   "name":"obj_key",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"isInteractable","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"dropY","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"768",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"dropY_Station","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"768",},
   ],
   "parent":{
     "name":"hold objects",
