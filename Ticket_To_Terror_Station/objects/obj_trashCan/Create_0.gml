@@ -13,7 +13,7 @@ Interact = function (_pickUp)
         
         if(trashCount == 0) 
         {
-            taskManager.tasksCount++;
+            taskManager.tasksCount--;
         }
     } 
 }
