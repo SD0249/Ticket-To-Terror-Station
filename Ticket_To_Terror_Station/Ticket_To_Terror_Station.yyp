@@ -62,6 +62,7 @@
     {"id":{"name":"obj_spigot","path":"objects/obj_spigot/obj_spigot.yy",},},
     {"id":{"name":"obj_switcher_station_office","path":"objects/obj_switcher_station_office/obj_switcher_station_office.yy",},},
     {"id":{"name":"obj_testPlayer","path":"objects/obj_testPlayer/obj_testPlayer.yy",},},
+    {"id":{"name":"obj_timeManager","path":"objects/obj_timeManager/obj_timeManager.yy",},},
     {"id":{"name":"obj_train","path":"objects/obj_train/obj_train.yy",},},
     {"id":{"name":"obj_trash","path":"objects/obj_trash/obj_trash.yy",},},
     {"id":{"name":"obj_trashCan","path":"objects/obj_trashCan/obj_trashCan.yy",},},
@@ -69,9 +70,11 @@
     {"id":{"name":"obj_wrench","path":"objects/obj_wrench/obj_wrench.yy",},},
     {"id":{"name":"taskManager","path":"objects/taskManager/taskManager.yy",},},
     {"id":{"name":"Room_Office","path":"rooms/Room_Office/Room_Office.yy",},},
+    {"id":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},
     {"id":{"name":"Room_Station","path":"rooms/Room_Station/Room_Station.yy",},},
     {"id":{"name":"CreateTasks","path":"scripts/CreateTasks/CreateTasks.yy",},},
     {"id":{"name":"DaySetUp","path":"scripts/DaySetUp/DaySetUp.yy",},},
+    {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
     {"id":{"name":"background","path":"sprites/background/background.yy",},},
     {"id":{"name":"blueLight","path":"sprites/blueLight/blueLight.yy",},},
     {"id":{"name":"Box","path":"sprites/Box/Box.yy",},},
@@ -111,6 +114,7 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Room_Station","path":"rooms/Room_Station/Room_Station.yy",},},
     {"roomId":{"name":"Room_Office","path":"rooms/Room_Office/Room_Office.yy",},},
+    {"roomId":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

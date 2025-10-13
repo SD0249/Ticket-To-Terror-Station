@@ -36,5 +36,12 @@ function GoThroughDoor()
     var roomSwitcher = instance_create_depth(0,0,0, obj_switcher_station_office);
     roomSwitcher.playerData = self;
     roomSwitcher.previousRoom = room;
-    room_goto(Room_Office);
+    if (room == Room_Office)
+    {
+        room_goto(Room_Station);
+    }
+    else
+    {
+        room_goto(Room_Office);
+    }
 }

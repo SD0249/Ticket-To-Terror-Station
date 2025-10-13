@@ -1,1 +1,1 @@
-// place object ininventory
+// place object in inventory
