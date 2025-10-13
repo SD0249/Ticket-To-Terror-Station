@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Train",
-    "path":"sprites/Train/Train.yy",
+    "name":"spr_train",
+    "path":"sprites/spr_train/spr_train.yy",
   },
   "spriteMaskId":null,
   "visible":true,
