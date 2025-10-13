@@ -1,6 +1,9 @@
-// Set time until monster to 90 seconds, time until office locks to 30 seconds
+// Fields
+timeUntilMonster = -1;
+
+// Set time until office locks and time until monster comes
 function StartGame()
 {
-    alarm[0] = 60 * 30;
-    alarm[1] = 60 * 90;
+    alarm[0] = 1800;            // 30 sec
+    timeUntilMonster = 5400;    // 90 sec
 }
