@@ -21,9 +21,9 @@ else
         }
     }
     
-    // If of pickupable type and not currently held, passes itself in as current pickupable if that
+    // If of pickupable type, passes itself in as current pickupable if that
     //    field is empty and it's in range or removes itself from that field if it's out of range
-    if (isPickupable == true && held == false)
+    if (isPickupable == true)
     {
         if (distance_to_object(playerRef) <= range && playerRef.currentPickupable == noone)
         {
