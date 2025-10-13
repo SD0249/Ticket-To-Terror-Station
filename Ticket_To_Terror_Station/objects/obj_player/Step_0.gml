@@ -57,12 +57,7 @@ if (!locked)
     else if (inventory >= 0 && keyboard_check_released(ord("X")))
     {
         var inst = instance_create_layer(x, y, "Instances", inventory);
-        inst.y = inst.dropY;
-        if (room = Room_Office)
-        {
-            inst.image_xscale = 1.5;
-            inst.image_yscale = 1.5;
-        }
+        inst.RepositionAndScale();
         inventory = -1;
         obj_Hub.UpdateItemHub(inventory);
     }
