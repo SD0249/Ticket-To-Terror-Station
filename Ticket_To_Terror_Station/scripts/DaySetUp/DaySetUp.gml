@@ -8,7 +8,6 @@ function Day1()
     
     // equal to how many tasks created
     taskManager.tasksCount = 2;
-
 }
 function Day2()
 {
