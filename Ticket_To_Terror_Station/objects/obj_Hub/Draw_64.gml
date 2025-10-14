@@ -12,24 +12,25 @@ draw_sprite_ext(spr_sanityFront, 1, posX, 64,
                 max(0, obj_player.sanity/obj_player.sanityMax), // calc fraction of bar to take up
                 1, 0, c_white, 1);
 
+var posY =room_height/2 - 108;
 
 // draw back of inventory 
-draw_sprite(inventoryHub, -1, 16, room_height/2 - 108);
+draw_sprite(inventoryHub, -1, 16, posY);
 
 // draw inventory item
 switch (inventoryItem) {
 	case obj_ladder: 
-        /* draw ladder inventory item */ break;
+        draw_sprite(iLadder, -1, 16, posY) break;
     case obj_trash:
-        draw_sprite(Trash, -1, 20, room_height/2 - 95); break;
+        draw_sprite(iTrash, -1, 16, posY); break;
     case obj_mop:
-        draw_sprite(mop, -1, 16, room_height/2 - 108); break;
+        draw_sprite(iMop, -1, 16, posY); break;
     case obj_wrench: 
-        draw_sprite(spr_wrench, -1, 16, room_height/2 - 108); break;
+        draw_sprite(iWrench, -1, 16, posY); break;
     case obj_lightBulb:
-        draw_sprite(spr_lightbulb, -1, 7, room_height/2 - 140); break;
+        draw_sprite(iLightbulb, -1, 16, posY); break;
     case obj_key: 
-        draw_sprite(spr_key, -1, 6, room_height/2 - 140); break;
+        draw_sprite(iKey, -1, 16, posY); break;
     default: break;
         
 }
