@@ -27,11 +27,11 @@ else if (movementX > 0)
 }
 else if (recentDirection < 0)
 {
-    // set sprite_index to left idle sprite
+    sprite_index = spr_player_idle_left;
 }
 else
 {
-    // set sprite_index to right idle sprite
+    sprite_index = spr_player_idle_right;
 }
 
 // Interact and pickup logic
