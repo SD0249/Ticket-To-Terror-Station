@@ -38,13 +38,18 @@ else
 if (!locked)
 {
     // Interacts with current interactable when z is released
-    if (currentInteractable != noone && keyboard_check_released(ord("Z")))
+    if (currentInteractable != noone 
+        && instance_exists(currentInteractable)
+        && keyboard_check_released(ord("Z")))
     {
         currentInteractable.Interact(inventory);
     }
     
     // Picks up item in range when x is released
-    else if (currentPickupable != noone && inventory < 0 && keyboard_check_released(ord("X")))
+    else if (currentPickupable != noone 
+        && instance_exists(currentPickupable)
+        && inventory < 0 
+        && keyboard_check_released(ord("X")))
     {
         inventory = currentPickupable.object_index;
         obj_Hub.UpdateItemHub(inventory);

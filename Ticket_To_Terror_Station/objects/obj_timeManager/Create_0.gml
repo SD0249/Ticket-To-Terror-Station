@@ -5,7 +5,7 @@ timeMax = -1;
 // Set time until office locks and time until monster comes
 function StartGame()
 {
-    alarm[0] = 1800;            // 30 sec
-    timeUntilMonster = 5400;    // 90 sec
-    timeMax = 5400;
+    alarm[0] = 3600;            // 60 sec
+    timeUntilMonster = 7200;    // 120 sec
+    timeMax = 7200;
 }

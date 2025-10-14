@@ -1,41 +1,21 @@
-// Determine current interactable debugging text
-var debugText_interactable = "Current Interactable: ";
+DrawDebugText();    // comment this out when finished
 
-if (currentInteractable == noone)
+draw_set_color(c_white);
+
+// If an interactable is in range, draw interact popup
+if (currentInteractable != noone && instance_exists(currentInteractable))
 {
-    debugText_interactable += "None";
-}
-else
-{
-    debugText_interactable += object_get_name(currentInteractable.object_index);
+    draw_text(140, 470, "PRESS 'Z' TO INTERACT");
 }
 
-// Determine current pickupable debugging text
-var debugText_pickupable = "Current Pickupable: ";
-
-if (currentPickupable == noone)
+// If holding item, draw drop popup
+if (inventory >= 0)
 {
-    debugText_pickupable += "None";
-}
-else
-{
-    debugText_pickupable += object_get_name(currentPickupable.object_index);
+    draw_text(140, 500, "PRESS 'X' TO DROP");
 }
 
-// Determine currently held item debugging text
-var debugText_held = "Currently Held: ";
-
-if (inventory < 0)
+// If not holding anything and pickup is in range, draw pick up popup
+else if (currentPickupable != noone && instance_exists(currentPickupable))
 {
-    debugText_held += "None";
+    draw_text(140, 500, "PRESS 'X' TO PICK UP");
 }
-else
-{
-    debugText_held += object_get_name(inventory);
-}
-
-// Display debug text
-draw_set_color(#ffffff);
-draw_text(20, 20, debugText_interactable);
-draw_text(20, 40, debugText_pickupable);
-draw_text(20, 60, debugText_held);

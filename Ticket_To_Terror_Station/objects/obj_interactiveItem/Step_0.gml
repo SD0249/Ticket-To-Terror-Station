@@ -1,5 +1,5 @@
 // Gets a reference to the player if it doesn't have one yet
-if (playerRef == noone)
+if (playerRef == noone or !instance_exists(playerRef))
 {
     playerRef = instance_nearest(x, y, obj_player);
 }

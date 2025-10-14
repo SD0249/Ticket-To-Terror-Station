@@ -5,7 +5,7 @@ isLocked = false;
 
 Interact = function (_pickUp)  {
     
-    if(!isLocked) {
+    if(!isLocked && _pickUp != obj_ladder) {
         // change scene to inside building 
         playerRef.GoThroughDoor();
     }

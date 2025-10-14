@@ -1,9 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_switcher_station_office",
-  "eventList":[],
+  "%Name":"obj_timer_phone",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_switcher_station_office",
+  "name":"obj_timer_phone",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
