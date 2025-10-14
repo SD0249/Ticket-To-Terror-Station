@@ -7,6 +7,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"canInteract","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"True",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"dropY_Station","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"736",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"dropY_office","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"672",},
   ],
   "parent":{
     "name":"hold objects",
