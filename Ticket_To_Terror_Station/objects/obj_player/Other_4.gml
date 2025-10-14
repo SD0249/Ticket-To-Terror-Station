@@ -3,11 +3,16 @@ if (room == Room_Office)
 {
     image_xscale = 1.5;
     image_yscale = 1.5;
-    y = 280;
+    y = y_office;
 }
 else
 {
     image_xscale = 1;
     image_yscale = 1;
-    y = 480;
+    y = y_station;
 }
+
+// Sets things in range to noone to avoid errors
+//    Note: this should already happen where needed
+currentInteractable = noone;
+currentPickupable = noone;
