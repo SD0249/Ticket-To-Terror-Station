@@ -1,25 +1,25 @@
 // Determine current interactable debugging text
 var debugText_interactable = "Current Interactable: ";
 
-if (currentInteractable == noone)
+if (currentInteractable != noone && instance_exists(currentInteractable))
 {
-    debugText_interactable += "None";
+    debugText_interactable += object_get_name(currentInteractable.object_index);    
 }
 else
 {
-    debugText_interactable += object_get_name(currentInteractable.object_index);
+    debugText_interactable += "None";
 }
 
 // Determine current pickupable debugging text
 var debugText_pickupable = "Current Pickupable: ";
 
-if (currentPickupable == noone)
+if (currentPickupable != noone && instance_exists(currentPickupable))
 {
-    debugText_pickupable += "None";
+    debugText_pickupable += object_get_name(currentPickupable.object_index);    
 }
 else
 {
-    debugText_pickupable += object_get_name(currentPickupable.object_index);
+    debugText_pickupable += "None";
 }
 
 // Determine currently held item debugging text
