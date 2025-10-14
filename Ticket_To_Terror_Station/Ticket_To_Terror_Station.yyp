@@ -129,6 +129,7 @@
     {"id":{"name":"spr_timerFront","path":"sprites/spr_timerFront/spr_timerFront.yy",},},
     {"id":{"name":"spr_train","path":"sprites/spr_train/spr_train.yy",},},
     {"id":{"name":"spr_wrench","path":"sprites/spr_wrench/spr_wrench.yy",},},
+    {"id":{"name":"Title","path":"sprites/Title/Title.yy",},},
     {"id":{"name":"Trash","path":"sprites/Trash/Trash.yy",},},
     {"id":{"name":"TrashCan","path":"sprites/TrashCan/TrashCan.yy",},},
     {"id":{"name":"water","path":"sprites/water/water.yy",},},
