@@ -1,3 +1,5 @@
-// if slime collides with player end game 
-// or load still if that is done 
-loseGame();
+with(obj_player) {
+    if(visible) {
+        obj_slimeMonster.loseGame()
+    }
+}
