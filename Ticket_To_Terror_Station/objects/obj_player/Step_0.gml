@@ -15,7 +15,7 @@ if (!locked)
 // Determines which animation to play
 if (climbing)
 {
-    // set sprite_index to climbing sprite 
+    sprite_index = spr_player_climb; 
 }
 else if (movementX < 0)
 {
