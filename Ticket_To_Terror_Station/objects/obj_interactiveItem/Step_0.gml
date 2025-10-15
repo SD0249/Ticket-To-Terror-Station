@@ -11,7 +11,18 @@ else
     //    and it's in range or removes itself from that field if it's out of range
     if (isInteractable)
     {
-        if (canInteract && distance_to_object(playerRef) <= range && playerRef.currentInteractable == noone)
+        // interact with light if possible, then ladder, then whatever else
+        if (canInteract && distance_to_object(playerRef) <= range && object_index == obj_light)
+        {
+            playerRef.currentInteractable = id;
+        }
+        else if (canInteract && distance_to_object(playerRef) <= range && object_index == obj_ladder)
+        {
+            playerRef.currentInteractable = id;
+        }
+        
+        // regular interact logic
+        else if (canInteract && distance_to_object(playerRef) <= range && playerRef.currentInteractable == noone)
         {
             playerRef.currentInteractable = id;
         }
