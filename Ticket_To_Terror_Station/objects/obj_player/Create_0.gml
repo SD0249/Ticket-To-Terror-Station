@@ -11,6 +11,7 @@ y_office = 280;
 y_station = 480;
 y_climb_top = 200;
 collisionTiles = layer_tilemap_get_id("Tiles_Collision");
+walkNum = 0; // random number for which walking noise to play
 
 // Not needed unless state needs to be accessed for something
 //     other than determining which animation should play
@@ -24,6 +25,9 @@ collisionTiles = layer_tilemap_get_id("Tiles_Collision");
 // }	
 // 
 // state = player.idle;
+
+//Randomizes random's seed
+randomize();
 
 // Transition between station and office
 function GoThroughDoor()

@@ -14,7 +14,8 @@ function NewCall()
 // Called when the player answers the phone while it's ringing
 function Answer()
 {
-    // play talking on phone sound and stop ringing sound
+    // play talking on phone sound
+    audio_stop_sound(snd_phone_ringing);
     timeUntilHangup = 0;
     timeUntilComplete = 240;
 }

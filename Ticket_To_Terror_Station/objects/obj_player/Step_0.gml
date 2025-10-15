@@ -37,6 +37,29 @@ else
     sprite_index = spr_player_idle_right;
 }
 
+// Determines when to play the footstep noises
+if (sprite_index == 0 || 
+    sprite_index == 4)
+{
+    walkNum = irandom(3);
+    if (walkNum == 0)
+    {
+        audio_play_sound(snd_footstep_1, 0, false);
+    }
+    if (walkNum == 1)
+    {
+        audio_play_sound(snd_footstep_2, 0, false);
+    }
+    if (walkNum == 2)
+    {
+        audio_play_sound(snd_footstep_3, 0, false);
+    }
+    if (walkNum == 3)
+    {
+        audio_play_sound(snd_footstep_4, 0, false);
+    }
+}
+
 // Interacts with light or ladder only while on ladder
 if (!locked && y == y_climb_top)
 {
@@ -70,6 +93,14 @@ else if (!locked)
         && keyboard_check_released(ord("X")))
     {
         inventory = currentPickupable.object_index;
+        if (currentPickupable.object_index = obj_trash)
+        {
+            audio_play_sound(snd_trash_pickup, 0, false);
+        }
+        else if (currentPickupable.object_index = obj_wrench)
+        {
+            audio_play_sound(snd_wrench_pick_up, 0, false);
+        } 
         obj_Hub.UpdateItemHub(inventory);
         instance_destroy(currentPickupable);
         currentPickupable = noone;
@@ -81,6 +112,16 @@ else if (!locked)
     {
         var inst = instance_create_layer(x, y, "Instances", inventory);
         inst.RepositionAndScale();
+        
+        if (inventory = obj_trash)
+        {
+            audio_play_sound(snd_trash_pickup, 0, false);
+        }
+        else if (inventory = obj_wrench)
+        {
+            audio_play_sound(snd_wrench_pick_up, 0, false);
+        }
+        
         inventory = -1;
         obj_Hub.UpdateItemHub(inventory);
     }

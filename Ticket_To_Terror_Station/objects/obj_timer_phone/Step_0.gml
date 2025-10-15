@@ -5,7 +5,7 @@ if (timeUntilCall > 0)
     if (timeUntilCall <= 0)
     {
         timeUntilCall = 0;
-        // start ringing sound
+        audio_play_sound(snd_phone_ringing, 0, true);
         timeUntilHangup = 600;
     }
 }
@@ -15,7 +15,7 @@ else if (timeUntilHangup > 0)
     if (timeUntilHangup <= 0)
     {
         timeUntilHangup = 0;
-        // stop ringing sound
+        audio_stop_sound(snd_phone_ringing);
         var taskmanRef = instance_nearest(x, y, taskManager);
         if (taskmanRef != noone && instance_exists(taskmanRef))
         {

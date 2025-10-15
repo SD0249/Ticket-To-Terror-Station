@@ -1,10 +1,12 @@
 moveSpeed = 10;
 
-loseGame = function() {
+loseGame = function() 
+{
     room_goto(Room_Lose);
 }
 
-nextDay = function() {
+nextDay = function() 
+{
     room_goto(Room_AfterDay);
 }
 

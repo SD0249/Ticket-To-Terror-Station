@@ -10,6 +10,7 @@ Interact = function(_pickUp)
         if (phoneTimer.timeUntilHangup > 0)
         {
             playerRef.locked = true;
+            audio_play_sound(snd_phone_pick_up, 0 ,false);
             phoneTimer.Answer();
         }
         else
