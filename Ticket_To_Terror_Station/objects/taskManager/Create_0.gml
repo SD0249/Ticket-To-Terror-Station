@@ -15,3 +15,10 @@ startDay = true;
 IncompleteTasks = function() {
    sanity -= tasksCount * 10;
 }
+
+// Called when a quick response task, such as a phone call, is missed
+MissedTask = function() {
+    sanity -= 10;
+    // maybe check for 0 or less sanity and call function that
+    //    goes to game over (went insane) screen if true
+}
