@@ -66,6 +66,7 @@
     {"id":{"name":"obj_lightCut","path":"objects/obj_lightCut/obj_lightCut.yy",},},
     {"id":{"name":"obj_lightRender","path":"objects/obj_lightRender/obj_lightRender.yy",},},
     {"id":{"name":"obj_mop","path":"objects/obj_mop/obj_mop.yy",},},
+    {"id":{"name":"obj_nextDay","path":"objects/obj_nextDay/obj_nextDay.yy",},},
     {"id":{"name":"obj_phone","path":"objects/obj_phone/obj_phone.yy",},},
     {"id":{"name":"obj_pipe","path":"objects/obj_pipe/obj_pipe.yy",},},
     {"id":{"name":"obj_playAgainButton","path":"objects/obj_playAgainButton/obj_playAgainButton.yy",},},

@@ -12,6 +12,10 @@ y_station = 480;
 y_climb_top = 200;
 collisionTiles = layer_tilemap_get_id("Tiles_Collision");
 
+function Hide (){
+    visible = !visible;
+}
+
 // Not needed unless state needs to be accessed for something
 //     other than determining which animation should play
 //

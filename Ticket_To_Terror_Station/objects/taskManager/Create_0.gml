@@ -11,6 +11,14 @@ sanityMax = 100;
 
 startDay = true;
 
+reset = false;
+
+NextDay = function() {
+    dayTracker++;
+    startDay = true;
+    reset = true;
+}
+
 // Run this function at the end of each day 
 IncompleteTasks = function() {
    sanity -= tasksCount * 10;

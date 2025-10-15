@@ -1,6 +1,6 @@
 // Moves with left/right arrows and A/D keys
 var movementX = 0;
-if (!locked && y != y_climb_top)
+if (!locked && y != y_climb_top && visible)
 {
     movementX = (keyboard_check(vk_right) or keyboard_check(ord("D"))) 
         - (keyboard_check(vk_left) or keyboard_check(ord("A"))); 
