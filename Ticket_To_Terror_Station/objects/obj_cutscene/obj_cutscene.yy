@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"obj_cutscean",
+  "%Name":"obj_cutscene",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_cutscean",
+  "name":"obj_cutscene",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",

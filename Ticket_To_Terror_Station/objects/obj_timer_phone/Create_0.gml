@@ -1,7 +1,19 @@
-// Phone should create one of these on create if no instance exists
-// Destroy this when entering a room other than office or station
+// Fields
+timeUntilCall = -1;
+timeUntilHangup = 600;
+remainingCalls = 3;
+ringing = false;
 
-// Store time until call, time until hangup, remaining calls
-// Function for NewCall, call it on create and whenever the player
-//    completes once. Decrement CallsRemaining at the same time.
-// Destroy this when last call is taken or missed
+// Sets timer for a new call to happen
+function NewCall()
+{
+    remainingCalls--;
+    timeUntilCall = random_range(20, 30) * 60;
+}
+
+// Destroy this when last call is taken or missed, aka
+//    when newcall would be called while remainingcalls < 1
+//    Draw debug stuff showing time until call, calls remaining
+
+// Sets timer for new call immediately upon creation
+NewCall();
