@@ -13,6 +13,8 @@ else
 }
 
 // Sets things in range to noone to avoid errors
-//    Note: this should already happen where needed
 currentInteractable = noone;
 currentPickupable = noone;
+
+// Gets collideable layer
+collisionTiles = layer_tilemap_get_id("Tiles_Collision");
