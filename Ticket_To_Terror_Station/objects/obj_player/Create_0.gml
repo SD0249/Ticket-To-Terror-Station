@@ -10,8 +10,6 @@ y_office = 280;
 y_station = 480;
 y_climb = 80;        // on top of ladder; change this value
 collisionTiles = layer_tilemap_get_id("Tiles_Collision");
-sanity = 90;
-sanityMax = 100;
 
 // Not needed unless state needs to be accessed for something
 //     other than determining which animation should play
