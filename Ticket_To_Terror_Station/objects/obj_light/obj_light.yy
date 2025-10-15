@@ -8,6 +8,7 @@
   "name":"obj_light",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"isPickupable","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"range","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"70",},
   ],
   "parent":{
     "name":"interactable objects",
