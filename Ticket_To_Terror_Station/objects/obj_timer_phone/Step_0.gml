@@ -1,9 +1,60 @@
-// Decrement time until call. If <= 0, see if phone instance exists.
-//    If no, set timer back to 60 (1 sec) to wait until phone is in room
-//    If yes, set ringing to true. Phone checks this var on interact and
-//    locks the player, plays sound, and calls Answer() on this, which sets
-//    timeLeftOnCall, which also gets decremented in step here and when done,
-//    unlocks the player and calls NewCall if calls are left, else destroy.
-// Player can only answer while timeUntilHangup > 0. That gets decremented
-//    here too, and get set back to -1 when player answers. If it does get
-//    to 0 or below, decrease sanity and still call NewCall() if any left.
+// Count down until ring
+if (timeUntilCall > 0)
+{
+    timeUntilCall--;
+    if (timeUntilCall <= 0)
+    {
+        timeUntilCall = 0;
+        // start ringing sound
+        timeUntilHangup = 600;
+    }
+}
+else if (timeUntilHangup > 0)
+{
+    timeUntilHangup--;
+    if (timeUntilHangup <= 0)
+    {
+        timeUntilHangup = 0;
+        // stop ringing sound
+        var taskmanRef = instance_nearest(x, y, taskManager);
+        if (taskmanRef != noone && instance_exists(taskmanRef))
+        {
+            taskmanRef.MissedTask();
+        }   
+        
+        // Start next call timer if any calls are left, else destroy this
+        if (remainingCalls > 0)
+        {
+            NewCall();
+        }
+        else
+        {
+            instance_destroy();
+        }     
+    }
+}
+
+// When player is on call, decrement time, unlock them once time is over
+else if (timeUntilComplete > 0)
+{
+    timeUntilComplete--;
+    if (timeUntilComplete <= 0)
+    {
+        timeUntilComplete = 0;
+        var playerRef = instance_nearest(x, y, obj_player);
+        if (playerRef != noone && instance_exists(playerRef))
+        {
+            playerRef.locked = false;
+        }
+        
+        // Start next call timer if any calls are left, else destroy this
+        if (remainingCalls > 0)
+        {
+            NewCall();
+        }
+        else
+        {
+            instance_destroy();
+        }
+    }
+}

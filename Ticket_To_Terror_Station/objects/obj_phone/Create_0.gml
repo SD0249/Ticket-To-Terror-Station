@@ -1,7 +1,24 @@
 // Inherit the parent event
 event_inherited();
 
+// Talk on phone if it's ringing
 Interact = function(_pickUp)
 {
-    
+    var phoneTimer = instance_nearest(x, y, obj_timer_phone);
+    if (phoneTimer != noone && instance_exists(phoneTimer))
+    {
+        if (phoneTimer.timeUntilHangup > 0)
+        {
+            playerRef.locked = true;
+            phoneTimer.Answer();
+        }
+        else
+        {
+            // play failed interaction sound
+        }
+    }
+    else
+    {
+    	// play failed interaction sound
+    }
 }
