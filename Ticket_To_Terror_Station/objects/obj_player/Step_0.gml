@@ -1,7 +1,8 @@
 // Moves with left/right arrows and A/D keys
 var movementX = 0;
-if (!locked && y != y_climb_top)
+if (!locked)
 {
+    
     movementX = (keyboard_check(vk_right) or keyboard_check(ord("D"))) 
         - (keyboard_check(vk_left) or keyboard_check(ord("A"))); 
     if (movementX != 0)
@@ -12,13 +13,9 @@ if (!locked && y != y_climb_top)
 }
 
 // Determines which animation to play
-if (y == y_climb_top)
+if (climbing)
 {
-    sprite_index = spr_player_climb_top;
-}
-else if (climbing)
-{
-    sprite_index = spr_player_climb; 
+    // set sprite_index to climbing sprite 
 }
 else if (movementX < 0)
 {
@@ -37,23 +34,8 @@ else
     sprite_index = spr_player_idle_right;
 }
 
-// Interacts with light or ladder only while on ladder
-if (!locked && y == y_climb_top)
-{
-    if (currentInteractable != noone 
-        && instance_exists(currentInteractable) 
-        && keyboard_check_released(ord("Z")))
-    {
-        if (currentInteractable.object_index == obj_light 
-            or currentInteractable.object_index == obj_ladder)
-        {
-            currentInteractable.Interact(inventory);
-        }
-    }
-}
-
-// Regular interact and pickup logic
-else if (!locked)
+// Interact and pickup logic
+if (!locked)
 {
     // Interacts with current interactable when z is released
     if (currentInteractable != noone 
@@ -83,23 +65,5 @@ else if (!locked)
         inst.RepositionAndScale();
         inventory = -1;
         obj_Hub.UpdateItemHub(inventory);
-    }
-}
-
-// move up or down if climbing, then stop once at top/bottom
-if (climbing)
-{
-    y += 4 * climbDirection;
-    if (y < y_climb_top)
-    {
-        y = y_climb_top;
-        locked = false;
-        climbing = false;
-    }
-    if (y > y_station)
-    {
-        y = y_station;
-        locked = false;
-        climbing = false;
     }
 }
