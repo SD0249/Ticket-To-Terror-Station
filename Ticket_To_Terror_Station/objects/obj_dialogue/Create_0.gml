@@ -39,38 +39,41 @@ dialogueDay3Fail = [
     ];
 
 // tracking game state!!
-currentline = 0;
+currentLine = 0;
 textspeed = 0.2;
 textTimer = 0;
 userInputNeeded = false;
 displayedText = "";
 finished = false;
 showTicket = false;
-ticketShown = false;
+currentTicketSprite = noone;
 
 // player cannot move
-obj_player.canMove = false;
+obj_player.locked = true;
 
 // get task data...
-dayManager = instance_find(obj_dayManager, 0);
-currentDay = dayManager.dayTracker;
+dayManager = instance_find(taskManager, 0);
+currentDay = taskManager.dayTracker;
 
-tasksCompleated = (dayManager.taskCount <= 0);
+tasksCompleated = (dayManager.tasksCount <= 0);
 
 // dialogue sequence 
 if (currentDay == 1)
 {
     currentDialogue = dialogueTutorial;
+    currentTicketSprite = spr_ticket_day1;
 }
 else if (currentDay == 2)
 {
     if (tasksCompleated)
     {
         currentDialogue = dialogueDay2Compleat;
+        currentTicketSprite = spr_ticket_day2;
     }
     else
     {
         currentDialogue = dialogueDay2Fail;
+        currentTicketSprite = spr_ticket_day2;
     }
 }
 else if (currentDay == 3)
@@ -78,9 +81,11 @@ else if (currentDay == 3)
     if (tasksCompleated)
     {
         currentDialogue = dialogueDay3Compleat;
+        currentTicketSprite = spr_ticket_day3;
     }
     else
     {
         currentDialogue = dialogueDay3Fail;
+        currentTicketSprite = spr_ticket_day3;
     }
 }
