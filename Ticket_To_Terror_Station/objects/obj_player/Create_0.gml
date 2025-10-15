@@ -4,11 +4,12 @@ currentPickupable = noone;
 inventory = -1;    // nonexistent obj index
 moveSpeed = 10.0;
 recentDirection = 1;
+climbDirection = -1;    // up, toward y = 0
 locked = true;
 climbing = false;
 y_office = 280;
 y_station = 480;
-y_climb = 80;        // on top of ladder; change this value
+y_climb_top = 200;
 collisionTiles = layer_tilemap_get_id("Tiles_Collision");
 
 // Not needed unless state needs to be accessed for something
@@ -33,9 +34,25 @@ function GoThroughDoor()
     {
         room_goto(Room_Station);
     }
-    else
+    else if (room == Room_Station)
     {
         room_goto(Room_Office);
+    }
+}
+
+// Starts climbing up or down the ladder
+function ClimbStart(_ladderX)
+{
+    locked = true;
+    climbing = true;
+    x = _ladderX - 80;
+    if (y <= y_climb_top)
+    {
+        climbDirection = 1;
+    }
+    else
+    {
+    	climbDirection = -1;
     }
 }
 
@@ -77,10 +94,26 @@ function DrawDebugText()
     {
         debugText_held += object_get_name(inventory);
     }
+    
+    // Determine climb direction
+    var debugText_climbInfo = "Climbing: ";
+
+    if (climbDirection == 1)
+    {
+        debugText_climbInfo += "Down";
+    }
+    else if (climbDirection == -1)
+    {
+        debugText_climbInfo += "Up";
+    }
 
     // Display debug text
     draw_set_color(#ffffff);
     draw_text(20, 20, debugText_interactable);
     draw_text(20, 40, debugText_pickupable);
     draw_text(20, 60, debugText_held);
+    if (climbing)
+    {
+        draw_text(20, 80, debugText_climbInfo);
+    }
 }

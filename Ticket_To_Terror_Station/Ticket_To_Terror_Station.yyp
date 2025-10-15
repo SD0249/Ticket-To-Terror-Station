@@ -118,6 +118,7 @@
     {"id":{"name":"spr_collision","path":"sprites/spr_collision/spr_collision.yy",},},
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},
     {"id":{"name":"spr_lightbulb","path":"sprites/spr_lightbulb/spr_lightbulb.yy",},},
+    {"id":{"name":"spr_player_climb_top","path":"sprites/spr_player_climb_top/spr_player_climb_top.yy",},},
     {"id":{"name":"spr_player_climb","path":"sprites/spr_player_climb/spr_player_climb.yy",},},
     {"id":{"name":"spr_player_idle_left","path":"sprites/spr_player_idle_left/spr_player_idle_left.yy",},},
     {"id":{"name":"spr_player_idle_right","path":"sprites/spr_player_idle_right/spr_player_idle_right.yy",},},

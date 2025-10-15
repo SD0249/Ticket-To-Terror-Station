@@ -1,4 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-Interact = function () {}
+Interact = function(_pickUp)
+{
+    playerRef.ClimbStart(x);
+}
