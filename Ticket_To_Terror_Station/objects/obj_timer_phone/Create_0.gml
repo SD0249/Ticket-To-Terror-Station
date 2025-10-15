@@ -31,9 +31,5 @@ function DrawDebugText()
     draw_text(20, 160, "Calls Remaining: " + string(remainingCalls));      
 }
 
-// Destroy this when last call is taken or missed, aka
-//    when newcall would be called while remainingcalls < 1
-//    Draw debug stuff showing time until call, calls remaining
-
 // Sets timer for new call immediately upon creation
 NewCall();

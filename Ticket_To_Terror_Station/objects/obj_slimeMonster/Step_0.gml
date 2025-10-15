@@ -14,5 +14,5 @@ if(x <= room_width/2 - sprite_get_width(spr_slimeMonster))
 if (x <= 0 - sprite_get_width(spr_slimeMonster)) 
 {
     instance_destroy();
-    // change to win screen 
+    nextDay(); 
 }
