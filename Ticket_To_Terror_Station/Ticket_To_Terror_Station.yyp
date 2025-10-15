@@ -82,6 +82,7 @@
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
     {"id":{"name":"obj_wrench","path":"objects/obj_wrench/obj_wrench.yy",},},
     {"id":{"name":"taskManager","path":"objects/taskManager/taskManager.yy",},},
+    {"id":{"name":"Room_AfterDay","path":"rooms/Room_AfterDay/Room_AfterDay.yy",},},
     {"id":{"name":"Room_Lose","path":"rooms/Room_Lose/Room_Lose.yy",},},
     {"id":{"name":"Room_Office","path":"rooms/Room_Office/Room_Office.yy",},},
     {"id":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},
@@ -146,6 +147,7 @@
     {"roomId":{"name":"Room_Office","path":"rooms/Room_Office/Room_Office.yy",},},
     {"roomId":{"name":"Room_Station","path":"rooms/Room_Station/Room_Station.yy",},},
     {"roomId":{"name":"Room_Lose","path":"rooms/Room_Lose/Room_Lose.yy",},},
+    {"roomId":{"name":"Room_AfterDay","path":"rooms/Room_AfterDay/Room_AfterDay.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
