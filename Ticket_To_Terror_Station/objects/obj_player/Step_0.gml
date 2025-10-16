@@ -16,15 +16,17 @@ if (!locked && y != y_climb && visible)
 // Determines which animation to play
 if (climbing)
 {
-    // set sprite_index to climbing sprite 
+    sprite_index = spr_player_climb
 }
 else if (movementX < 0)
 {
     sprite_index = spr_player_walk_left;
+	reduceDelay = true;
 }
 else if (movementX > 0)
 {
     sprite_index = spr_player_walk_right;
+	reduceDelay = true;
 }
 else if (recentDirection < 0)
 {
@@ -36,26 +38,35 @@ else
 }
 
 // Determines when to play the footstep noises
-if (sprite_index == 0 || 
-    sprite_index == 4)
+if (sprite_index == spr_player_walk_left || 
+    sprite_index == spr_player_walk_right)
 {
-    walkNum = irandom(3);
-    if (walkNum == 0)
-    {
-        audio_play_sound(snd_footstep_1, 0, false);
-    }
-    if (walkNum == 1)
-    {
-        audio_play_sound(snd_footstep_2, 0, false);
-    }
-    if (walkNum == 2)
-    {
-        audio_play_sound(snd_footstep_3, 0, false);
-    }
-    if (walkNum == 3)
-    {
-        audio_play_sound(snd_footstep_4, 0, false);
-    }
+	if (delay > 0) 
+	{
+	 delay -= 1;
+	} 
+	else if (reduceDelay)
+	{
+		walkNum = irandom(3);
+		if (walkNum == 0)
+		{
+		    audio_play_sound(snd_footstep_1, 0, false);
+		}
+		else if (walkNum == 1)
+		{
+		    audio_play_sound(snd_footstep_2, 0, false);
+		}
+		else if (walkNum == 2)
+		{
+		    audio_play_sound(snd_footstep_3, 0, false);
+		}
+		else if (walkNum == 3)
+		{
+		    audio_play_sound(snd_footstep_4, 0, false);
+		}
+		delay = delay_duration;
+		reduceDelay = false;
+	}
 }
 
 // Interacts with light or ladder only while on ladder
@@ -97,8 +108,21 @@ else if (!locked)
         }
         else if (currentPickupable.object_index = obj_wrench)
         {
-            audio_play_sound(snd_wrench_pick_up, 0, false);
+            audio_play_sound(snd_wrench_pickup, 0, false);
         } 
+		else if (currentPickupable.object_index = obj_mop)
+        {
+            audio_play_sound(snd_mop_pickup, 0, false);
+			alarm[0] = 30;
+        }
+		else if (currentPickupable.object_index = obj_lightBulb)
+        {
+            audio_play_sound(snd_lightbulb_pickup, 0, false);
+        }
+		else if (currentPickupable.object_index = obj_key)
+        {
+            audio_play_sound(snd_key_pickup, 0, false);
+        }
         obj_Hub.UpdateItemHub(inventory);
         instance_destroy(currentPickupable);
         currentPickupable = noone;
@@ -117,9 +141,22 @@ else if (!locked)
         }
         else if (inventory = obj_wrench)
         {
-            audio_play_sound(snd_wrench_pick_up, 0, false);
+            audio_play_sound(snd_wrench_pickup, 0, false);
         }
-        
+		else if (inventory = obj_mop)
+        {
+            audio_play_sound(snd_mop_pickup, 0, false);
+			alarm[0] = 30;
+        }
+		else if (inventory = obj_lightBulb)
+        {
+            audio_play_sound(snd_lightbulb_pickup, 0, false);
+        }
+        else if (inventory = obj_key)
+        {
+            audio_play_sound(snd_key_pickup, 0, false);
+        }
+		
         inventory = -1;
         obj_Hub.UpdateItemHub(inventory);
     }

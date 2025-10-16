@@ -10,6 +10,7 @@ Interact = function (_pickUp)
         trashCount--;
         
         // remove item from inteventory 
+		audio_play_sound(snd_trash_thrown_away, 0, false);
         obj_player.inventory = -1;
         obj_Hub.UpdateItemHub(obj_player.inventory);
         

@@ -12,6 +12,11 @@ y_climb = 80;        // on top of ladder; change this value
 collisionTiles = layer_tilemap_get_id("Tiles_Collision");
 sanity = 90;
 sanityMax = 100;
+walkNum = 0 // rand numb to decide step sound
+
+delay = 0;
+delay_duration = 30; // 1-second delay
+reduceDelay = false;
 
 function Hide (){
     visible = !visible;

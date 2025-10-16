@@ -12,9 +12,19 @@ Interact = function (_pickUp) {
         
         waterOn = !waterOn;
         
-        with(obj_water){
+        with(obj_water)
+		{
             id.visible = obj_spigot.waterOn;
         }
+		
+		if (waterOn)
+		{
+			audio_play_sound(snd_running_tap, 0, true);
+		}
+		else if (!waterOn && audio_is_playing(snd_running_tap))
+		{
+			audio_stop_sound(snd_running_tap);
+		}
     }
         
 }

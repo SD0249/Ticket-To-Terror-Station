@@ -4,23 +4,40 @@ lowerSanity = 10;
 
 lightsBroken = 0;
 
+delay = 0;
+delay_duration = 60; // 1-second delay
+reduceDelay = false;
 
 // turn lights off and on
-SwitchLights = function () {
+SwitchLights = function () 
+{
     obj_lightRender.lightsOn = !obj_lightRender.lightsOn;
+	
+	if (obj_lightRender.lightsOn)
+	{
+		audio_play_sound(snd_lights_on, 0, false);
+	}
+	if (!obj_lightRender.lightsOn)
+	{
+		audio_play_sound(snd_breaker_lock, 0, false);
+	}
 }
 
-LightColor = function () {
+LightColor = function () 
+{
     obj_lightRender.lightBlue = !obj_lightRender.lightBlue;
 }
 
 
 // breakers interact 
-Interact = function (_pickUp)  {
+Interact = function (_pickUp)  
+{
     
-    if(_pickUp == obj_key) {
-        if(lightsBroken == 0) {
-            SwitchLights();
+    if(_pickUp == obj_key) 
+	{
+        if(lightsBroken == 0) 
+		{
+            reduceDelay = true;
         }
     }
 }

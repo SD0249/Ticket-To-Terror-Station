@@ -10,15 +10,16 @@ Interact = function(_pickUp)
         if (phoneTimer.timeUntilHangup > 0)
         {
             playerRef.locked = true;
+			audio_play_sound(snd_phone_talking, 0, true);
             phoneTimer.Answer();
         }
         else
         {
-            // play failed interaction sound
+            audio_play_sound(snd_failed_interaction, 0, false);
         }
     }
     else
     {
-    	// play failed interaction sound
+    	audio_play_sound(snd_failed_interaction, 0, false);
     }
 }
