@@ -12,7 +12,9 @@ else
     if (isInteractable)
     {
         // interact with light if possible, then ladder, then whatever else
-        if (canInteract && distance_to_object(playerRef) <= range && object_index == obj_light)
+        if (canInteract && distance_to_object(playerRef) <= range 
+            && object_index == obj_light && canBeFixed == true
+            && playerRef.inventory == obj_lightBulb)
         {
             playerRef.currentInteractable = id;
         }

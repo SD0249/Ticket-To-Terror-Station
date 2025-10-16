@@ -55,7 +55,6 @@
     {"id":{"name":"obj_building","path":"objects/obj_building/obj_building.yy",},},
     {"id":{"name":"obj_buttonParent","path":"objects/obj_buttonParent/obj_buttonParent.yy",},},
     {"id":{"name":"obj_creditButton","path":"objects/obj_creditButton/obj_creditButton.yy",},},
-    {"id":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},},
     {"id":{"name":"obj_debugStuff_office","path":"objects/obj_debugStuff_office/obj_debugStuff_office.yy",},},
     {"id":{"name":"obj_dialogue","path":"objects/obj_dialogue/obj_dialogue.yy",},},
     {"id":{"name":"obj_door","path":"objects/obj_door/obj_door.yy",},},

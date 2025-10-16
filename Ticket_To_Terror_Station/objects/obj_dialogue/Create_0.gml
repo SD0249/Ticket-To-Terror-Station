@@ -1,14 +1,14 @@
 // all the dialogue arrays!!
 
-dialogueTutorial = [ 
-    "Boss: So ya missed yur train and the next one isn't for another five days… HA HAR! Well aint that a problem.",
+dialogueTutorial = [
+    "Boss: So ya missed yur train and the next one isn't for another five days. HA HAR! Well aint that a problem.",
     "Boss: Tell you what kid, since I'm feeling generous I'll let ya hang around here. I'll even pay ya!",
-    "Boss: In food and housing that is, don't expect me to share my pay check. Here's the deal… the people who come in here, well they ain't people.",
+    "Boss: In food and housing that is, don't expect me to share my pay check.",
+    "Boss: Here's the deal… the people who come in here, well they ain't people.",
     "Boss: You'll understand soon, just get to work and I might give ya a ticket when your train comes.",
-    {ticket: spr_ticket_day1},
     "Boss: Now get! I've got some napping to do. Well deserved after dealing with those things for so long"
     ];
-
+   
 /*dialogueDay2Compleat = [
     "Boss: I'm surprised, so yur not all useless. Well good for you",
     "Boss: Ya made it to the next day, four more till ya can leave! Then I'll have to start working again… ugh.",
@@ -46,6 +46,8 @@ displayedText = "";
 finished = false;
 showTicket = false;
 currentTicketSprite = noone;
+ticketTimer = 0.0;
+draw_sprite_for_10_sec = true;
 
 // player cannot move
 obj_player.locked = true;
