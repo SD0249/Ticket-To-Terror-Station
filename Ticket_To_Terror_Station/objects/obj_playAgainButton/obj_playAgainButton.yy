@@ -11,7 +11,7 @@
   ],
   "parent":{
     "name":"Lose menu",
-    "path":"folders/Objects/Lose menu.yy",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_buttonParent",

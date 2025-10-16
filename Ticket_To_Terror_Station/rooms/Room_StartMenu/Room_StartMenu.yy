@@ -23,6 +23,8 @@
         {"$GMRInstance":"v2","%Name":"inst_5194503B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5194503B","objectId":{"name":"obj_creditButton","path":"objects/obj_creditButton/obj_creditButton.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.5,"scaleY":1.5,"x":448.0,"y":928.0,},
         {"$GMRInstance":"v2","%Name":"inst_52A42D37","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_52A42D37","objectId":{"name":"taskManager","path":"objects/taskManager/taskManager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-8.875,"scaleY":-7.625,"x":151.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+  ],
+ "name":"Room_Station",
   "parent":{
     "name":"Rooms",
     "path":"folders/Rooms.yy",
