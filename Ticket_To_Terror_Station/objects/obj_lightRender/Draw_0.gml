@@ -26,7 +26,7 @@ if(lightsOn) {
 
 }
 else {
-    draw_clear_alpha(c_black, 0.8);
+    draw_clear_alpha(c_black, 0.7);
 }
 
 surface_reset_target();
