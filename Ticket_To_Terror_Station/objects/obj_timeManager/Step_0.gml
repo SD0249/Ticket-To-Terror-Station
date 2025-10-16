@@ -5,11 +5,14 @@ if (timeUntilMonster > 0)
     if (timeUntilMonster <= 0)
     {
         timeUntilMonster = 0;
+        // Call something to start the monster sequence instead of this,
+        //    probably set alarm[1] and have that go off when monster
+        //    leaves, causing player to die or complete that level
         
-        // spawn the current days monster 
+                // spawn the current days monster 
         switch (taskManager.dayTracker) {
             case 1: 
-                instance_create_layer(room_width, 834, "Instances", obj_slimeMonster); 
+                instance_create_layer(room_width, 840, "Instances", obj_slimeMonster); 
                 break;
             case 2: 
                  break;

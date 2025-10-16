@@ -9,7 +9,7 @@ dialogueTutorial = [
     "Boss: Now get! I've got some napping to do. Well deserved after dealing with those things for so long"
     ];
 
-dialogueDay2Compleat = [
+/*dialogueDay2Compleat = [
     "Boss: I'm surprised, so yur not all useless. Well good for you",
     "Boss: Ya made it to the next day, four more till ya can leave! Then I'll have to start working again… ugh.",
     {ticket: spr_ticket_day2},
@@ -36,7 +36,7 @@ dialogueDay3Fail = [
     "Boss: Still in school? Let me save ya the trouble kid, drop out. HA HAR!",
     {ticket: spr_ticket_day3},
     "Boss: Getta work kid, I need a smoke break."
-    ];
+    ];*/
 
 // tracking game state!!
 currentLine = 0;
@@ -63,7 +63,7 @@ if (currentDay == 1)
     currentDialogue = dialogueTutorial;
     currentTicketSprite = spr_ticket_day1;
 }
-else if (currentDay == 2)
+/*else if (currentDay == 2)
 {
     if (tasksCompleated)
     {
@@ -88,4 +88,4 @@ else if (currentDay == 3)
         currentDialogue = dialogueDay3Fail;
         currentTicketSprite = spr_ticket_day3;
     }
-}
+}*/
