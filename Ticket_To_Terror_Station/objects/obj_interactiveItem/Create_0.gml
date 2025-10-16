@@ -1,6 +1,8 @@
 lowerSanity = 0;
 playerRef = noone;
 
+depth = -2;
+
 Interact = function(_pickUp){ }
 
 // Repositions and scales the object appropriately depending on room
