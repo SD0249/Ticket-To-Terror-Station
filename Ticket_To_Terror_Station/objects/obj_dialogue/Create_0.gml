@@ -42,7 +42,6 @@ dialogueDay3Fail = [
 currentLine = 0;
 textspeed = 0.2;
 textTimer = 0;
-userInputNeeded = false;
 displayedText = "";
 finished = false;
 showTicket = false;
@@ -52,10 +51,10 @@ currentTicketSprite = noone;
 obj_player.locked = true;
 
 // get task data...
-dayManager = instance_find(taskManager, 0);
+// dayManager = instance_find(taskManager, 0);
 currentDay = taskManager.dayTracker;
 
-tasksCompleated = (dayManager.tasksCount <= 0);
+tasksCompleated = (taskManager.tasksCount <= 0);
 
 // dialogue sequence 
 if (currentDay == 1)
