@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ResetStation",
+  "%Name":"Reset",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ResetStation",
+  "name":"Reset",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

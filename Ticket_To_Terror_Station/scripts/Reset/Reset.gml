@@ -48,3 +48,21 @@ function ResetStation(){
 		instance_destroy();
 	}
 }
+
+function ResetOffice() {
+	
+	// make player playable in office
+	with(obj_player) {
+		x = 200;
+		locked = false;
+		visible = true;
+		
+		// reset inventory	
+		inventory = -1;
+		obj_Hub.UpdateItemHub(-1);
+		}
+		
+		// reset time
+		obj_timeManager.Reset();
+	
+}

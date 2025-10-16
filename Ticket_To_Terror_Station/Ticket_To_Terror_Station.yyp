@@ -94,7 +94,7 @@
     {"id":{"name":"Room_Station","path":"rooms/Room_Station/Room_Station.yy",},},
     {"id":{"name":"CreateTasks","path":"scripts/CreateTasks/CreateTasks.yy",},},
     {"id":{"name":"DaySetUp","path":"scripts/DaySetUp/DaySetUp.yy",},},
-    {"id":{"name":"ResetStation","path":"scripts/ResetStation/ResetStation.yy",},},
+    {"id":{"name":"Reset","path":"scripts/Reset/Reset.yy",},},
     {"id":{"name":"snd_breaker_lock","path":"sounds/snd_breaker_lock/snd_breaker_lock.yy",},},
     {"id":{"name":"snd_door_lock","path":"sounds/snd_door_lock/snd_door_lock.yy",},},
     {"id":{"name":"snd_failed_interaction","path":"sounds/snd_failed_interaction/snd_failed_interaction.yy",},},

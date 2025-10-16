@@ -18,14 +18,7 @@ restartRoom = function ()
     if(reset) {
     // reset office
         if(room == Room_Office) { 
-            with(obj_player) {
-                x = 200;
-                locked = false;
-                visible = true;
-            }
-			
-			// reset time
-			obj_timeManager.Reset();
+			ResetOffice();
         }
         reset = false;
     }
@@ -34,7 +27,7 @@ restartRoom = function ()
 	    if(room == Room_Station) {
 			
 			// remove things from unfinished tasks
-			ResetStation();
+			Reset();
 			
 			show_debug_message(dayTracker);
 			
