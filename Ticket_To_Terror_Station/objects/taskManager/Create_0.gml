@@ -27,7 +27,7 @@ restartRoom = function ()
     if(startDay) {
     if(room == Room_Station) {
         
-        room_restart()
+		
         switch (dayTracker) {
             case 1: 
                 Day1(); break;
