@@ -4,12 +4,6 @@ var screenY = 1071;
 // draw ticket to screen
 if (showTicket == true && currentTicketSprite != noone)
 {
-    // var spriteX = sprite_get_width(currentTicketSprite);
-    // var spriteY = sprite_get_width(currentTicketSprite);
-    var X = (screenX - spriteX) / 2;
-    var Y = (screenY - spriteY) / 2;
-    
-    // draw_sprite(currentTicketSprite, 0, X, Y);
     
 }
 

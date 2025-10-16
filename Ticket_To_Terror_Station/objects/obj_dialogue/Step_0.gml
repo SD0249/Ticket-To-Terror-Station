@@ -2,7 +2,7 @@
 
 if (!finished)
 {
-    var line = currentDialogue[currentline];
+    var line = currentDialogue[currentLine];
     
     if (is_string(line) && !showTicket)
     {
