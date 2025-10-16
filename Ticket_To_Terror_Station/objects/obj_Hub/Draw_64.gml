@@ -7,11 +7,11 @@ draw_sprite_ext(spr_timerFront, 1, posX, 16,
             max(0, obj_timeManager.timeUntilMonster/obj_timeManager.timeMax), 
             1, 0, c_white, 1);
 // draw sanity 
-with(taskManager) {
-    draw_sprite_ext(spr_sanityFront, 1, posX, 64, 
-                max(0, id.sanity/id.sanityMax), // calc fraction of bar to take up
+var taskMan = instance_find(taskManager,0);
+
+draw_sprite_ext(spr_sanityFront, 1, posX, 64, 
+                max(0, taskMan.sanity/taskMan.sanityMax), // calc fraction of bar to take up
                 1, 0, c_white, 1);
-}
 
 
 var posY = room_height/2 - 108;
