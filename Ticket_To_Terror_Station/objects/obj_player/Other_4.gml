@@ -12,10 +12,6 @@ else if (room == Room_Station)
     y = y_station;
 }
 // Destroy if transitioning to a room other than station or office
-else
-{
-	instance_destroy();
-}
 
 // Sets things in range to noone to avoid errors
 //    Note: this should already happen where needed

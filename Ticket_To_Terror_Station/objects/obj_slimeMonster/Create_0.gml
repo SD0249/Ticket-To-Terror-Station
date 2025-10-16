@@ -6,5 +6,10 @@ loseGame = function() {
 
 nextDay = function() {
     room_goto(Room_AfterDay);
+    
+    with(obj_player) {
+        locked = true;
+        visible = false;
+    }
 }
 

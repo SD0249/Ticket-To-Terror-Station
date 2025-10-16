@@ -17,9 +17,12 @@ restartRoom = function ()
 {
     if(reset) {
     // reset office
-        if(room == Room_Office) {
-            room_restart();
-            show_debug_message("apple");
+        if(room == Room_Office) { 
+            with(obj_player) {
+                x = 200;
+                locked = false;
+                visible = true;
+            }
         }
         reset = false;
     }
