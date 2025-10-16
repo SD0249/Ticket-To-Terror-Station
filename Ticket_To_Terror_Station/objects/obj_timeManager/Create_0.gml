@@ -9,3 +9,7 @@ function StartGame()
     timeUntilMonster = /*7200*/ 600;     // 120 sec
     timeMax = 7200;
 }
+
+function Reset() {
+	timeUntilMonster = timeMax;
+}

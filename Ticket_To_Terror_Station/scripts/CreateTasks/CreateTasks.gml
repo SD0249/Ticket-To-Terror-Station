@@ -82,7 +82,7 @@ function LightsTask()
         breaker.lightsBroken++;
     }
     
-    breaker.SwitchLights();
+    breaker.SwitchLights(false);
 
 }
 

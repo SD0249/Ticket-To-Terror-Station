@@ -21,7 +21,7 @@ Interact = function (_pickUp)  {
             if(obj_breaker.lightsBroken == 0)
             {
                 taskManager.tasksCount--;
-                obj_breaker.SwitchLights(); // turn lights on to indicate task complete
+                obj_breaker.SwitchLights(true); // turn lights on to indicate task complete
             }
         }
     }
