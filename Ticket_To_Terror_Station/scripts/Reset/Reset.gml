@@ -47,6 +47,10 @@ function ResetStation(){
 	with(obj_wrench) {
 		instance_destroy();
 	}
+	
+	// unlock door 
+	 var door = instance_find(obj_door, 0)
+	 door.isLocked = false;
 }
 
 function ResetOffice() {
