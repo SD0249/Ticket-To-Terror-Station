@@ -11,3 +11,7 @@ function StartGame()
     timeMax = 7200;
     locked = false;
 }
+
+function Reset() {
+	timeUntilMonster = timeMax;
+}

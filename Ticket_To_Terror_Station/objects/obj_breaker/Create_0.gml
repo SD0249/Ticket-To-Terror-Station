@@ -9,9 +9,10 @@ delay_duration = 60; // 1-second delay
 reduceDelay = false;
 
 // turn lights off and on
-SwitchLights = function () 
+SwitchLights = function(on) 
 {
-    obj_lightRender.lightsOn = !obj_lightRender.lightsOn;
+	
+    obj_lightRender.lightsOn = on;
 	
 	if (obj_lightRender.lightsOn)
 	{
