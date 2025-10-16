@@ -1,7 +1,7 @@
 // Moves with left/right arrows and A/D keys
 var movementX = 0;
 
-if (!locked && y != y_climb && visible)
+if (!locked && y != y_climb_top && visible)
 {
     
     movementX = (keyboard_check(vk_right) or keyboard_check(ord("D"))) 
@@ -14,9 +14,13 @@ if (!locked && y != y_climb && visible)
 }
 
 // Determines which animation to play
-if (climbing)
+if (y == y_climb_top)
 {
-    sprite_index = spr_player_climb
+    sprite_index = spr_player_climb_top;
+}
+else if (climbing)
+{
+    sprite_index = spr_player_climb;
 }
 else if (movementX < 0)
 {
@@ -70,7 +74,7 @@ if (sprite_index == spr_player_walk_left ||
 }
 
 // Interacts with light or ladder only while on ladder
-if (!locked && y == y_climb)
+if (!locked && y == y_climb_top)
 {
     if (currentInteractable != noone 
         && instance_exists(currentInteractable) 
@@ -159,5 +163,23 @@ else if (!locked)
 		
         inventory = -1;
         obj_Hub.UpdateItemHub(inventory);
+    }
+}
+
+// move up or down if climbing, then stop once at top/bottom
+if (climbing)
+{
+    y += 4 * climbDirection;
+    if (y < y_climb_top)
+    {
+        y = y_climb_top;
+        locked = false;
+        climbing = false;
+    }
+    if (y > y_station)
+    {
+        y = y_station;
+        locked = false;
+        climbing = false;
     }
 }
