@@ -21,9 +21,11 @@ if (!finished)
             }
         }
     }
-    // if player presses Z
-    if (keyboard_check_pressed(ord("z")))
+}
+// if player presses Z
+    if (keyboard_check_pressed(vk_space))
     {
+        var line = currentDialogue[currentLine];
         var fullText = line;
         
         if (string_length(displayedText) < string_length(fullText))
@@ -42,21 +44,22 @@ if (!finished)
             }
         }
     }
-}
-
 // to show the ticket
 else if (showTicket)
 {
-    if (keyboard_check_pressed("z"))
+    if (draw_sprite_for_10_sec)
     {
-        showTicket = false;
-        currentLine++;
-        displayedText = "";
+        ticketTimer += delta_time / 1000000;
+        
+        if (ticketTimer > 1.0)
+        {
+            draw_sprite_for_10_sec = false;
+        }
     }
-}
-
-// handaling the end of the dialogue 
-if (currentLine == array_length(currentDialogue))
+    
+    displayedText = "";
+} 
+else if (currentLine == (array_length(currentDialogue) - 1))    // handaling the end of the dialogue 
 {
     finished = true;
     

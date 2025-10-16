@@ -9,23 +9,30 @@ if (showTicket == true && currentTicketSprite != noone)
     var X = (screenX - spriteX) / 2;
     var Y = (screenY - spriteY) / 2;
     
-    draw_sprite(currentTicketSprite, 0, X, Y);
+    if (draw_sprite_for_10_sec)
+    {
+        draw_sprite(currentTicketSprite, 0, X, Y);
+    }
+    else 
+    {
+    	showTicket = false;
+    }
 }
 
 if (showTicket == false && finished == false)
 {
     // draw dialogue box
-    var boxH = screenY - 220;
+    var boxH = 200;
     
     // everything drawn to console after will be black
     draw_set_color(c_black);
     
     // drawing the box
-    draw_rectangle_color(0, boxH, screenX, screenY, c_black, c_black, c_black, c_black, false);
+    draw_rectangle_color(0, boxH + 200, 1700, 300 + 600, c_black, c_black, c_black, c_black, false);
     
     // everything drawn to console after will be white
     draw_set_color(c_white);
     
     // drawing the text
-    draw_text_ext(64, boxH + 40, displayedText, 24, screenX -128)
+    draw_text_ext(64, boxH + 240, displayedText, 24, 750)
 }
