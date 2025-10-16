@@ -24,3 +24,5 @@ currentPickupable = noone;
 
 // Gets collideable layer
 collisionTiles = layer_tilemap_get_id("Tiles_Collision");
+
+depth = -100;
