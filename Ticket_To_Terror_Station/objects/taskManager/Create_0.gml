@@ -27,7 +27,7 @@ restartRoom = function ()
 	    if(room == Room_Station) {
 			
 			// remove things from unfinished tasks
-			Reset();
+			ResetStation();
 			
 			show_debug_message(dayTracker);
 			
