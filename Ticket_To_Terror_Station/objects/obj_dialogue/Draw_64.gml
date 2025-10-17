@@ -4,14 +4,16 @@ var screenY = 1071;
 // draw ticket to screen
 if (showTicket == true && currentTicketSprite != noone)
 {
-    var spriteX = sprite_get_width(currentTicketSprite);
-    var spriteY = sprite_get_width(currentTicketSprite);
-    var X = (screenX - spriteX) / 2;
-    var Y = (screenY - spriteY) / 5;
+    //var spriteX = sprite_get_width(currentTicketSprite);
+    //var spriteY = sprite_get_width(currentTicketSprite);
+    //var X = (screenX - spriteX) / 2;
+    //var Y = (screenY - spriteY) / 5;
+    var xPos = view_wport / 2;
+    var yPos = view_hport / 2;
     
     if (draw_sprite_for_10_sec)
     {
-        draw_sprite(currentTicketSprite, 0, X, Y);
+        draw_sprite(currentTicketSprite, 0, xPos, yPos);
     }
     else 
     {
