@@ -1,4 +1,4 @@
-DrawDebugText();    // comment this out when finished
+//DrawDebugText();    // comment this out when finished
 
 draw_set_color(c_white);
 
@@ -18,4 +18,10 @@ if (inventory >= 0)
 else if (currentPickupable != noone && instance_exists(currentPickupable))
 {
     draw_text(140, 500, "PRESS 'X' TO PICK UP");
+}
+
+// Display M to exit office
+if (room == Room_Office)
+{
+    draw_text(500, 500, "PRESS 'E' TO EXIT THE OFFICE");
 }
