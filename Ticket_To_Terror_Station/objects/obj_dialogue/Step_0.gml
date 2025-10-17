@@ -5,6 +5,7 @@ if (currentLine >= array_length(currentDialogue) - 1 && !line_after_ticket)    /
     finished = true;
     
     obj_player.locked = false;
+    obj_timeManager.StartGame();
     instance_destroy();
     
     return;
