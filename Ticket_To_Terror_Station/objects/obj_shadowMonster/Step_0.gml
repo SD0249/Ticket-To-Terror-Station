@@ -11,5 +11,4 @@ if(x <= room_width/2 - sprite_get_width(spr_shadowMonster)) {
 
 if (x <= 0 - sprite_get_width(spr_shadowMonster)) {
     instance_destroy();
-    nextDay(); 
 }

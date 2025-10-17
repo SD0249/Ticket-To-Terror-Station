@@ -83,6 +83,7 @@ function LightsTask()
     }
     
     breaker.SwitchLights(false);
+	breaker.lightsOn = false;
 
 }
 
