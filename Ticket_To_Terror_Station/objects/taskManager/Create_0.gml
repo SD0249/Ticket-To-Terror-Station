@@ -16,38 +16,45 @@ reset = false;
 restartRoom = function ()
 {
     if(reset) {
-    // reset office
+		// reset office
         if(room == Room_Office) { 
 			ResetOffice();
-        }
-        reset = false;
-    }
-    
-    if(startDay) {
-	    if(room == Room_Station) {
 			
+			// decrease sanity 
+			IncompleteTasks();
+			
+			if(sanity <= 0) {
+				room_goto(Room_StartMenu);
+			}
+			
+			reset = false;
+		}
+	}
+	if(startDay) {
+		if(room == Room_Station) {
 			// remove things from unfinished tasks
 			ResetStation();
 			
 			show_debug_message(dayTracker);
 			
 			
-	        switch (dayTracker) {
-	            case 1: 
-	                Day1(); break;
-	            case 2: 
-	                Day2(); break;
-	            case 3:
-	                Day3(); break;
-	            case 4:
-	                Day4(); break;
-	            default: break; // game ends
-	        }
+		     switch (dayTracker) {
+				 case 1: 
+				 Day1(); break;
+				 case 2: 
+				 Day2(); break;
+				 case 3:
+				 Day3(); break;
+				 case 4:
+				 Day4(); break;
+				 default: break; // game ends
+		    }
         
-	        startDay = false;
-	    }
+		    startDay = false;
+		}
 	}
 }
+
 
 NextDay = function() {
     dayTracker++;
