@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_failed_interaction",
+  "%Name":"snd_ladder_pickup",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.48913833,
-  "name":"snd_failed_interaction",
+  "duration":0.96163267,
+  "name":"snd_ladder_pickup",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_failed_interaction.mp3",
+  "soundFile":"snd_ladder_pickup.mp3",
   "type":0,
-  "volume":0.6,
+  "volume":1.0,
 }

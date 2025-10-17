@@ -45,6 +45,8 @@ else if (timeUntilComplete > 0)
         if (playerRef != noone && instance_exists(playerRef))
         {
             playerRef.locked = false;
+			audio_play_sound(snd_phone_hangup, 0, false);
+			audio_stop_sound(snd_phone_talking);
         }
         
         // Start next call timer if any calls are left, else destroy this
@@ -57,4 +59,9 @@ else if (timeUntilComplete > 0)
             instance_destroy();
         }
     }
+	if (audio_is_playing(snd_phone_ringing))
+	{
+		audio_stop_sound(snd_phone_ringing);
+		audio_play_sound(snd_phone_pickup, 0, false);
+	}
 }

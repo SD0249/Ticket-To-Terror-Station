@@ -10,3 +10,8 @@ else if (reduceDelay)
     delay = delay_duration;
 	reduceDelay = false;
 }
+
+if (!notStart)
+{
+	notStart = true;
+}

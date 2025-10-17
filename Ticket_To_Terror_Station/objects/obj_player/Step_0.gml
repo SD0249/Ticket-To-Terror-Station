@@ -127,6 +127,10 @@ else if (!locked)
         {
             audio_play_sound(snd_key_pickup, 0, false);
         }
+		else if (currentPickupable.object_index = obj_ladder)
+        {
+            audio_play_sound(snd_ladder_pickup, 0, false);
+        }
         obj_Hub.UpdateItemHub(inventory);
         instance_destroy(currentPickupable);
         currentPickupable = noone;
@@ -159,6 +163,10 @@ else if (!locked)
         else if (inventory = obj_key)
         {
             audio_play_sound(snd_key_pickup, 0, false);
+        }
+		else if (inventory = obj_ladder)
+        {
+            audio_play_sound(snd_ladder_pickup, 0, false);
         }
 		
         inventory = -1;

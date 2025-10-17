@@ -9,6 +9,7 @@ lightsOn = false;
 delay = 0;
 delay_duration = 60; // 1-second delay
 reduceDelay = false;
+notStart = false;
 
 // turn lights off and on
 SwitchLights = function(on) 
@@ -16,7 +17,7 @@ SwitchLights = function(on)
 	
     obj_lightRender.lightsOn = on;
 	
-	if (obj_lightRender.lightsOn)
+	if (obj_lightRender.lightsOn && notStart)
 	{
 		audio_play_sound(snd_lights_on, 0, false);
 	}
@@ -47,6 +48,10 @@ Interact = function (_pickUp)
             reduceDelay = true;
         }
     }
+	else 
+	{
+		audio_play_sound(snd_failed_interaction, 0, false);
+	}
 }
 
 

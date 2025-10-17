@@ -3,20 +3,25 @@ event_inherited();
 
 isLocked = false;
 
-Interact = function (_pickUp)  {
+Interact = function (_pickUp) 
+{
     
-    if(!isLocked && _pickUp != obj_ladder) {
+    if(!isLocked && _pickUp != obj_ladder) 
+	{
         // change scene to inside building 
         playerRef.GoThroughDoor();
+		audio_play_sound(snd_door_creak, 0, false);
     }
-    else {
-        // play sound effect of player trying to open door
+    else 
+	{
+		audio_play_sound(snd_failed_interaction, 0, false);
     }
 }
 
-LockDoor = function(){
+LockDoor = function()
+{
     isLocked = true;
     
-    // play locking sound effect
+	audio_play_sound(snd_door_lock, 0, false);
 }
 

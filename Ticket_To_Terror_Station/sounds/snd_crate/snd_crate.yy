@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_failed_interaction",
+  "%Name":"snd_crate",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.48913833,
-  "name":"snd_failed_interaction",
+  "duration":0.60668933,
+  "name":"snd_crate",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_failed_interaction.mp3",
+  "soundFile":"snd_crate.mp3",
   "type":0,
-  "volume":0.6,
+  "volume":0.75,
 }

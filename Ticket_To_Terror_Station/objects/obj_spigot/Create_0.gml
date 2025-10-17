@@ -19,7 +19,7 @@ Interact = function (_pickUp) {
 		
 		if (waterOn)
 		{
-			audio_play_sound(snd_running_tap, 0, true);
+			audio_play_sound(snd_running_tap, 0, false);
 		}
 		else if (!waterOn && audio_is_playing(snd_running_tap))
 		{
