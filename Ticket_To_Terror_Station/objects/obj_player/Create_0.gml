@@ -1,3 +1,6 @@
+// !! Since player is persistent over rooms, this is just for the player not to be drawn in win or lose scenes
+active = true;
+
 // Fields
 currentInteractable = noone;
 currentPickupable = noone;

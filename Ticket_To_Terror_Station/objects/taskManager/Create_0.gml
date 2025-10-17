@@ -25,6 +25,8 @@ restartRoom = function ()
 			
 			if(sanity <= 0) {
 				room_goto(Room_SanityLose);
+				instance_deactivate_all(true);
+				game_restart();
 			}
 			
 			reset = false;
@@ -67,7 +69,9 @@ RepeatDay = function() {
     reset = true;
 }
 
-	
+ResetDay = function() {
+	dayTracker = 1;
+}
 
 // Run this function at the end of each day 
 IncompleteTasks = function() {

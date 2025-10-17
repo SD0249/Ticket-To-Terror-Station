@@ -97,3 +97,8 @@ function ResetOffice() {
 		inst.OfficeScale();
 	}
 }
+
+function NewGame() {
+	ResetOffice();
+	ResetStation();
+}

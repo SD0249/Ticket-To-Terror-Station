@@ -12,6 +12,10 @@ else if (room == Room_Station)
     y = y_station;
     x = 560;
 }
+else if(room == Room_Win)
+{
+	active = false;
+}
 // Destroy if transitioning to a room other than station or office
 
 // Sets things in range to noone to avoid errors
