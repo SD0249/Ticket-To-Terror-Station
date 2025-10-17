@@ -1,4 +1,4 @@
-// all the dialogue arrays!!
+// all the dialogue arrays!! 
 
 dialogueTutorial = [
     "Boss: So ya missed yur train and the next one isn't for another five days. HA HAR! Well aint that a problem.",
@@ -63,19 +63,19 @@ if (currentDay == 1)
     currentDialogue = dialogueTutorial;
     currentTicketSprite = spr_ticket_day1;
 }
-/*else if (currentDay == 2)
+else if (currentDay == 2)
 {
     if (tasksCompleated)
     {
         currentDialogue = dialogueDay2Compleat;
-        currentTicketSprite = spr_ticket_day2;
+        // currentTicketSprite = spr_ticket_day2;
     }
     else
     {
         currentDialogue = dialogueDay2Fail;
-        currentTicketSprite = spr_ticket_day2;
+        // currentTicketSprite = spr_ticket_day2;
     }
-}
+}/*
 else if (currentDay == 3)
 {
     if (tasksCompleated)

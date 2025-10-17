@@ -2,10 +2,17 @@
   "$GMSprite":"",
   "%Name":"spr_ticket_day1",
   "bboxMode":0,
+<<<<<<< Updated upstream
   "bbox_bottom":593,
   "bbox_left":304,
   "bbox_right":651,
   "bbox_top":69,
+=======
+  "bbox_bottom":962,
+  "bbox_left":491,
+  "bbox_right":1052,
+  "bbox_top":112,
+>>>>>>> Stashed changes
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -16,14 +23,42 @@
   ],
   "gridX":0,
   "gridY":0,
+<<<<<<< Updated upstream
   "height":658,
+=======
+  "height":1061,
+>>>>>>> Stashed changes
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"cc22a5ee-b000-4480-894b-bada0aebe7ae","blendMode":0,"displayName":"default","isLocked":false,"name":"cc22a5ee-b000-4480-894b-bada0aebe7ae","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_ticket_day1",
+<<<<<<< Updated upstream
   "nineSlice":null,
   "origin":4,
+=======
+  "nineSlice":{
+    "$GMNineSliceData":"",
+    "bottom":0,
+    "enabled":false,
+    "guideColour":[4294902015,4294902015,4294902015,4294902015,],
+    "highlightColour":1728023040,
+    "highlightStyle":0,
+    "left":0,
+    "resourceType":"GMNineSliceData",
+    "resourceVersion":"2.0",
+    "right":0,
+    "tileMode":[
+      0,
+      0,
+      0,
+      0,
+      0,
+    ],
+    "top":0,
+  },
+  "origin":9,
+>>>>>>> Stashed changes
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -77,8 +112,13 @@
     ],
     "visibleRange":null,
     "volume":1.0,
+<<<<<<< Updated upstream
     "xorigin":465,
     "yorigin":329,
+=======
+    "xorigin":325,
+    "yorigin":115,
+>>>>>>> Stashed changes
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -88,5 +128,9 @@
   },
   "type":0,
   "VTile":false,
+<<<<<<< Updated upstream
   "width":930,
+=======
+  "width":1500,
+>>>>>>> Stashed changes
 }
