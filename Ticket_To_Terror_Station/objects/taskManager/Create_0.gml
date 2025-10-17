@@ -55,6 +55,13 @@ NextDay = function() {
     reset = true;
 }
 
+RepeatDay = function() { 
+	startDay = true;
+    reset = true;
+}
+
+	
+
 // Run this function at the end of each day 
 IncompleteTasks = function() {
    sanity -= tasksCount * 10;
