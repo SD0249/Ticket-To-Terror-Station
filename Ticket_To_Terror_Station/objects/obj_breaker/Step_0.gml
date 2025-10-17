@@ -8,6 +8,5 @@ if (delay > 0)
 else if (reduceDelay)
 {
     delay = delay_duration;
-	SwitchLights(true);
 	reduceDelay = false;
 }

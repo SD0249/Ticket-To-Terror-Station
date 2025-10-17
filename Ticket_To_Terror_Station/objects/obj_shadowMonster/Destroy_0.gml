@@ -1,1 +1,1 @@
-room_goto(Room_Credit);
+room_goto(Room_Win);

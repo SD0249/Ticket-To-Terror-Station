@@ -11,7 +11,7 @@ function Day1()
 }
 function Day2()
 {
-    
+    TrashTask();
 }
 function Day3()
 {

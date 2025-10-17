@@ -4,6 +4,8 @@ lowerSanity = 10;
 
 lightsBroken = 0;
 
+lightsOn = false;
+
 delay = 0;
 delay_duration = 60; // 1-second delay
 reduceDelay = false;
@@ -38,6 +40,10 @@ Interact = function (_pickUp)
 	{
         if(lightsBroken == 0) 
 		{
+			// change lights to opposite state 
+			lightsOn = !lightsOn;
+			SwitchLights(lightsOn);
+			
             reduceDelay = true;
         }
     }
