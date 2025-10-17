@@ -24,7 +24,7 @@ restartRoom = function ()
 			IncompleteTasks();
 			
 			if(sanity <= 0) {
-				room_goto(Room_StartMenu);
+				room_goto(Room_SanityLose);
 			}
 			
 			reset = false;
