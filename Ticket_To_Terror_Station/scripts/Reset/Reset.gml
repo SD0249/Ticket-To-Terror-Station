@@ -19,6 +19,7 @@ function ResetStation(){
     }
     
     breaker.SwitchLights(true);
+	breaker.lightsBroken = 0;
 	
 	// reset spigot 
 	 var spigot = instance_find(obj_spigot, 0);

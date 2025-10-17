@@ -7,7 +7,7 @@ if (showTicket == true && currentTicketSprite != noone)
     var spriteX = sprite_get_width(currentTicketSprite);
     var spriteY = sprite_get_width(currentTicketSprite);
     var X = (screenX - spriteX) / 2;
-    var Y = (screenY - spriteY) / 2;
+    var Y = (screenY - spriteY) / 5;
     
     if (draw_sprite_for_10_sec)
     {
@@ -36,3 +36,4 @@ if (showTicket == false && finished == false)
     // drawing the text
     draw_text_ext(64, boxH + 240, displayedText, 24, 750)
 }
+

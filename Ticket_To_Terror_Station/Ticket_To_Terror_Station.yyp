@@ -93,6 +93,7 @@
     {"id":{"name":"Room_SanityLose","path":"rooms/Room_SanityLose/Room_SanityLose.yy",},},
     {"id":{"name":"Room_StartMenu","path":"rooms/Room_StartMenu/Room_StartMenu.yy",},},
     {"id":{"name":"Room_Station","path":"rooms/Room_Station/Room_Station.yy",},},
+    {"id":{"name":"Room_Win","path":"rooms/Room_Win/Room_Win.yy",},},
     {"id":{"name":"CreateTasks","path":"scripts/CreateTasks/CreateTasks.yy",},},
     {"id":{"name":"DaySetUp","path":"scripts/DaySetUp/DaySetUp.yy",},},
     {"id":{"name":"Reset","path":"scripts/Reset/Reset.yy",},},
@@ -186,6 +187,7 @@
     {"roomId":{"name":"Room_AfterDay","path":"rooms/Room_AfterDay/Room_AfterDay.yy",},},
     {"roomId":{"name":"Room_Credit","path":"rooms/Room_Credit/Room_Credit.yy",},},
     {"roomId":{"name":"Room_SanityLose","path":"rooms/Room_SanityLose/Room_SanityLose.yy",},},
+    {"roomId":{"name":"Room_Win","path":"rooms/Room_Win/Room_Win.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

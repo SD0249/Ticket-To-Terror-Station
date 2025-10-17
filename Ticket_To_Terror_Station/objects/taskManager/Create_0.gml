@@ -24,7 +24,7 @@ restartRoom = function ()
 			IncompleteTasks();
 			
 			if(sanity <= 0) {
-				room_goto(Room_StartMenu);
+				room_goto(Room_SanityLose);
 			}
 			
 			reset = false;
@@ -71,7 +71,7 @@ RepeatDay = function() {
 
 // Run this function at the end of each day 
 IncompleteTasks = function() {
-   sanity -= tasksCount * 10;
+   sanity -= tasksCount * 20;
 }
 
 // Called when a quick response task, such as a phone call, is missed

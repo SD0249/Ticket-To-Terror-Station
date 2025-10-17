@@ -1,7 +1,18 @@
 // printing out...
 
+if (currentLine >= array_length(currentDialogue) - 1 && !line_after_ticket)    // handaling the end of the dialogue 
+{
+    finished = true;
+    
+    obj_player.locked = false;
+    instance_destroy();
+    
+    return;
+}
+
 if (!finished)
 {
+    
     var line = currentDialogue[currentLine];
     
     if (is_string(line) && !showTicket)
@@ -23,27 +34,37 @@ if (!finished)
     }
 }
 // if player presses Z
-    if (keyboard_check_pressed(vk_space))
-    {
-        var line = currentDialogue[currentLine];
-        var fullText = line;
+if (keyboard_check_pressed(vk_space))
+{
+    var line = currentDialogue[currentLine];
+    var fullText = line;
         
-        if (string_length(displayedText) < string_length(fullText))
-        {
-            displayedText = fullText;
-        }
-        else
-        {
-            // move to the next line...
-            currentLine++;
-            displayedText = "";
-            
-            if (currentLine == array_length(currentDialogue) - 2)
-            {
-                showTicket = true;
-            }
-        }
+    if (string_length(displayedText) < string_length(fullText))
+    {
+        displayedText = fullText;
     }
+    else
+    {
+        // move to the next line..
+        displayedText = "";
+            
+        if (currentLine == array_length(currentDialogue) - 2)
+        {
+            showTicket = true;
+            
+        }
+        else if(currentLine < array_length(currentDialogue) - 1)
+        {
+        	currentLine++;
+        }
+        
+        if(currentLine == array_length(currentDialogue) - 1) 
+        {
+            line_after_ticket = false;    
+        }
+        
+    }
+}
 // to show the ticket
 else if (showTicket)
 {
@@ -51,7 +72,7 @@ else if (showTicket)
     {
         ticketTimer += delta_time / 1000000;
         
-        if (ticketTimer > 1.0)
+        if (ticketTimer > 5.0)
         {
             draw_sprite_for_10_sec = false;
         }
@@ -59,11 +80,9 @@ else if (showTicket)
     
     displayedText = "";
 } 
-else if (currentLine == (array_length(currentDialogue) - 1))    // handaling the end of the dialogue 
+else if(!showTicket && !draw_sprite_for_10_sec) 
 {
-    finished = true;
-    
-    obj_player.locked = false;
-    obj_timeManager.StartGame();
-    instance_destroy();
+    currentLine = array_length(currentDialogue) - 1;
 }
+
+
