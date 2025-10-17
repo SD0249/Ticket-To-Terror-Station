@@ -165,6 +165,7 @@
     {"id":{"name":"spr_shadowMonster","path":"sprites/spr_shadowMonster/spr_shadowMonster.yy",},},
     {"id":{"name":"spr_slimeMonster","path":"sprites/spr_slimeMonster/spr_slimeMonster.yy",},},
     {"id":{"name":"spr_ticket_day1","path":"sprites/spr_ticket_day1/spr_ticket_day1.yy",},},
+    {"id":{"name":"spr_ticket_day2","path":"sprites/spr_ticket_day2/spr_ticket_day2.yy",},},
     {"id":{"name":"spr_timerBack","path":"sprites/spr_timerBack/spr_timerBack.yy",},},
     {"id":{"name":"spr_timerFront","path":"sprites/spr_timerFront/spr_timerFront.yy",},},
     {"id":{"name":"spr_train","path":"sprites/spr_train/spr_train.yy",},},
