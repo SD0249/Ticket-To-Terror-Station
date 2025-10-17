@@ -71,7 +71,7 @@ function ResetOffice() {
 		
 		
 	// reset items in room 
-	var inst;
+	var inst = noone;
 	
 	if(!instance_exists(obj_key)) {
 		 inst = instance_create_layer(544, 576, "Instances", obj_key);
@@ -91,5 +91,7 @@ function ResetOffice() {
 		 inst = instance_create_layer(192, 384, "Instances", obj_lightBulb);
 	}
 	
-	inst.OfficeScale();
+	if(inst != noone) {
+		inst.OfficeScale();
+	}
 }

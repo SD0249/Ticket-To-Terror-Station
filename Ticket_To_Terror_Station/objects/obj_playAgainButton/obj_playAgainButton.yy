@@ -10,7 +10,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_buttonParent","path":"objects/obj_buttonParent/obj_buttonParent.yy",},"propertyId":{"name":"buttonText","path":"objects/obj_buttonParent/obj_buttonParent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Play Again",},
   ],
   "parent":{
-    "name":"Lose menu",
+    "name":"Objects",
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_button",
-    "path":"sprites/spr_button/spr_button.yy",
+    "name":"inventoryHub",
+    "path":"sprites/inventoryHub/inventoryHub.yy",
   },
   "spriteMaskId":null,
   "visible":true,
