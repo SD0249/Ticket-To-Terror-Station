@@ -9,7 +9,7 @@
   "name":"obj_trash",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"isInteractable","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"False",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"dropY_Station","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"834",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"dropY_Station","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"814",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interactiveItem","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"propertyId":{"name":"dropY_office","path":"objects/obj_interactiveItem/obj_interactiveItem.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"768",},
   ],
   "parent":{

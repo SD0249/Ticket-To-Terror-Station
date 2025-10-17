@@ -36,3 +36,4 @@ if (showTicket == false && finished == false)
     // drawing the text
     draw_text_ext(64, boxH + 240, displayedText, 24, 750)
 }
+
