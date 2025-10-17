@@ -10,6 +10,7 @@ else if (room == Room_Station)
     image_xscale = 1;
     image_yscale = 1;
     y = y_station;
+    x = 560;
 }
 // Destroy if transitioning to a room other than station or office
 

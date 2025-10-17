@@ -64,5 +64,6 @@ else if (currentLine == (array_length(currentDialogue) - 1))    // handaling the
     finished = true;
     
     obj_player.locked = false;
+    obj_timeManager.StartGame();
     instance_destroy();
 }
