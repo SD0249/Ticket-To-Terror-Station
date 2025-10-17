@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_trash_thrown_away",
+  "%Name":"snd_text",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,8 +9,8 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.0423583,
-  "name":"snd_trash_thrown_away",
+  "duration":1.247755,
+  "name":"snd_text",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_trash_thrown_away.mp3",
+  "soundFile":"snd_text.mp3",
   "type":0,
-  "volume":0.4,
+  "volume":0.2,
 }

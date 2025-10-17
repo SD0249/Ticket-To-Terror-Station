@@ -25,6 +25,11 @@ if (!finished)
         {
             // making timing separeate from code and smoother...
             textTimer += delta_time / 1000;
+			
+			if (!audio_is_playing(snd_text))
+			{
+				audio_play_sound(snd_text, 0, true);
+			}
             
             if (textTimer >= textspeed)
             {
@@ -32,6 +37,10 @@ if (!finished)
                 displayedText = string_copy(fullText, 1, string_length(displayedText) + 1);
             }
         }
+		else if (string_length(displayedText) = string_length(fullText))
+		{
+			audio_stop_sound(snd_text);
+		}
     }
 }
 // if player presses Z

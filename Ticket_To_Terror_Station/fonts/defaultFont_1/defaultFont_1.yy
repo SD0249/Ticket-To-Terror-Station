@@ -2144,7 +2144,10 @@
   "sdfSpread":8,
   "size":30.0,
   "styleName":"Consulate Regular",
-  "textureGroupId":null,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
   "TTFName":"",
   "usesSDF":false,
 }
