@@ -4,6 +4,7 @@ var screenY = 1071;
 // draw ticket to screen
 if (showTicket == true && currentTicketSprite != noone)
 {
+<<<<<<< Updated upstream
     //var spriteX = sprite_get_width(currentTicketSprite);
     //var spriteY = sprite_get_width(currentTicketSprite);
     //var X = (screenX - spriteX) / 2;
@@ -14,6 +15,16 @@ if (showTicket == true && currentTicketSprite != noone)
     if (draw_sprite_for_10_sec)
     {
         draw_sprite(currentTicketSprite, 0, xPos, yPos);
+=======
+    var spriteX = sprite_get_width(currentTicketSprite);
+    var spriteY = sprite_get_width(currentTicketSprite);
+    var X = (screenX - spriteX) / 2;
+    var Y = (screenY - spriteY) / 2;
+    
+    if (draw_sprite_for_10_sec)
+    {
+        draw_sprite(currentTicketSprite, 0, 0, 0);
+>>>>>>> Stashed changes
     }
     else 
     {
