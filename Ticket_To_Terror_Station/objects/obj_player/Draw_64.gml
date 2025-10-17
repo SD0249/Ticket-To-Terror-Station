@@ -20,8 +20,12 @@ else if (currentPickupable != noone && instance_exists(currentPickupable))
     draw_text(140, 500, "PRESS 'X' TO PICK UP");
 }
 
-// Display M to exit office
+// Display E to exit office, space to progress text
 if (room == Room_Office)
 {
     draw_text(500, 500, "PRESS 'E' TO EXIT THE OFFICE");
+    if (locked)
+    {
+        draw_text(870, 370, "[SPACE]");
+    }
 }
