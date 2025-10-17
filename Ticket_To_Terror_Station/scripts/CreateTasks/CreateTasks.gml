@@ -9,11 +9,11 @@ function TrashTask()
     // create trash in scene at loaction 
     // create list of x and y positions 
     var trashPositions = ds_list_create();
-    ds_list_add(trashPositions, [(irandom_range(10, 3650)),834]);
-    ds_list_add(trashPositions, [(irandom_range(10, 3650)),834]);
-    ds_list_add(trashPositions, [(irandom_range(10, 3650)),834]);
-    ds_list_add(trashPositions, [(irandom_range(10, 3650)),834]);
-    ds_list_add(trashPositions, [(irandom_range(10, 3650)),834]);
+    ds_list_add(trashPositions, [(irandom_range(10, 3650)),814]);
+    ds_list_add(trashPositions, [(irandom_range(10, 3650)),814]);
+    ds_list_add(trashPositions, [(irandom_range(10, 3650)),814]);
+    ds_list_add(trashPositions, [(irandom_range(10, 3650)),814]);
+    ds_list_add(trashPositions, [(irandom_range(10, 3650)),814]);
     
     // add x and y possitions to each trash instance and print to room
     for (var i = 0; i < ds_list_size(trashPositions); i++)
