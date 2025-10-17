@@ -9,7 +9,7 @@ dialogueTutorial = [
     "Boss: Now get! I've got some napping to do. Well deserved after dealing with those things for so long"
     ];
    
-/*dialogueDay2Compleat = [
+dialogueDay2Compleat = [
     "Boss: I'm surprised, so yur not all useless. Well good for you",
     "Boss: Ya made it to the next day, four more till ya can leave! Then I'll have to start working again… ugh.",
     "Boss: Get to scrubben the floors, I wanna see my face shine in em."
@@ -17,10 +17,9 @@ dialogueTutorial = [
 
 dialogueDay2Fail = [
     "Boss: So ya still came back? I thought kids like you were smart, guess that little task list got the better of ya. HA HAR!",
-    {ticket: spr_ticket_day2},
     "Boss: Get to scrubben the floors, I wanna see my face shine in em."
     ];
-
+/*
 dialogueDay3Compleat = [
     "Boss: Well aren't you a quick one. Not bad kid, ya aint bad…",
     "Boss: If only ya would stick around, being lazy never felt better. Well here the ticket for today, look it over kid.",

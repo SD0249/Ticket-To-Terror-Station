@@ -7,7 +7,7 @@ if (showTicket == true && currentTicketSprite != noone)
     var spriteX = sprite_get_width(currentTicketSprite);
     var spriteY = sprite_get_width(currentTicketSprite);
     var X = (screenX - spriteX) / 2;
-    var Y = (screenY - spriteY) / 2;
+    var Y = (screenY - spriteY) / 5;
     
     if (draw_sprite_for_10_sec)
     {
