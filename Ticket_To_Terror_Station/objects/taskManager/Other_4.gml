@@ -12,31 +12,19 @@ with(obj_Hub) {
 	active = GUI_Active;
 }
 
-
-
-//// !! This Logic might not work right
-//// Find Player Instance to disable and enable
-//var player = instance_find(obj_player, 0);
-
-//// Since the task manager is persistent over all rooms, it should let the player be active or not in certain cases.
-//switch(room)
-//{
-//	case Room_Win:
-//	case Room_StartMenu:
-//	case Room_Credit:
-//		ResetDay();
-//		instance_deactivate_object(player);
-//	break;
+// Let Sanity be managed here! Bc Office Reset is also used when day is repeated, not only over to the next day
+switch(room)
+{
+	case Room_Win:
+	case Room_StartMenu:
+	case Room_Credit:
+		sanity = sanityMax;
+	break;
 	
-//	case Room_Lose:
-//	case Room_SanityLose:
-//		instance_deactivate_object(player);
-//	break;
-	
-//	case Room_Station:
-//	case Room_Office:
-//		instance_activate_object(player);
-//	break;
-//}
+	case Room_Lose:
+	case Room_SanityLose:
+		sanity = previousSanity; // Replay game option
+	break;
+}
 	
 	

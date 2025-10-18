@@ -71,7 +71,6 @@ function ResetOffice() {
 		// reset time
 		obj_timeManager.Reset();
 		
-		
 	// reset items in room 
 	var inst = noone;
 	

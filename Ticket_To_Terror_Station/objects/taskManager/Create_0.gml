@@ -6,6 +6,7 @@ monsterTaskDone = false; // do not know how i am doing this part yet
 
 puddleCount = 0;
 
+previousSanity = 100;	// Use to Repeat the day (Not the same as time value, bc the previous sanity of when day 1 is incomplete and when day 2 is incomplete can be different
 sanity = 100;
 sanityMax = 100;
 
@@ -21,7 +22,8 @@ restartRoom = function ()
 			ResetOffice();
 			
 			// decrease sanity 
-			IncompleteTasks();
+			// (This only needs to be run when we are NOT playing again)
+			// IncompleteTasks();
 			
 			if(sanity <= 0) {
 				room_goto(Room_SanityLose);
@@ -61,15 +63,14 @@ NextDay = function() {
     dayTracker++;
     startDay = true;
     reset = true;
+	previousSanity = sanity;
+	IncompleteTasks();
 }
 
 RepeatDay = function() { 
 	startDay = true;
     reset = true;
-}
-
-ResetDay = function() {
-	dayTracker = 1;
+	sanity = previousSanity;
 }
 
 // Run this function at the end of each day 
