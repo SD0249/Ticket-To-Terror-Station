@@ -25,13 +25,14 @@ else
 	    draw_text(140, 500, "PRESS 'X' TO PICK UP");
 	}
 
-	// Display E to exit office, space to progress text
+	// Display E to exit office, space to progress text, boss sprite
 	if (room == Room_Office)
 	{
 	    draw_text(500, 500, "PRESS 'E' TO EXIT THE OFFICE");
 	    if (locked)
 	    {
 	        draw_text(870, 370, "[SPACE]");
+            draw_sprite_ext(spr_boss, 1, 760, 70, -0.1, 0.1, 0, c_white, 1);
 	    }
 	}
 }
