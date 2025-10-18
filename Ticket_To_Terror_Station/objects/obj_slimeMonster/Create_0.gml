@@ -9,6 +9,9 @@ loseGame = function() {
         locked = true;
         visible = false;
     }
+	
+	// Ensure that the monster is destroyed
+	instance_destroy();
 }
 
 nextDay = function() {
@@ -18,5 +21,8 @@ nextDay = function() {
         locked = true;
         visible = false;
     }
+	
+	// Ensure that the monster is destroyed
+	instance_destroy();
 }
 
