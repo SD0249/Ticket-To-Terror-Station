@@ -8,3 +8,11 @@ if (room == Room_Office)
         playerRef.GoThroughDoor();
     }
 }
+else if (room == Room_Station)
+{
+    var doorRef = instance_nearest(x, y, obj_door);
+    if (room == Room_Station && locked && doorRef != noone && instance_exists(doorRef))
+    {
+        doorRef.LockDoor();
+    }
+}

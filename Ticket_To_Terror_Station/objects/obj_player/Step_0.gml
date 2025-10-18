@@ -106,28 +106,28 @@ else if (!locked)
         && keyboard_check_released(ord("X")))
     {
         inventory = currentPickupable.object_index;
-        if (currentPickupable.object_index = obj_trash)
+        if (currentPickupable.object_index == obj_trash)
         {
             audio_play_sound(snd_trash_pickup, 0, false);
         }
-        else if (currentPickupable.object_index = obj_wrench)
+        else if (currentPickupable.object_index == obj_wrench)
         {
             audio_play_sound(snd_wrench_pickup, 0, false);
         } 
-		else if (currentPickupable.object_index = obj_mop)
+		else if (currentPickupable.object_index == obj_mop)
         {
             audio_play_sound(snd_mop_pickup, 0, false);
 			alarm[0] = 30;
         }
-		else if (currentPickupable.object_index = obj_lightBulb)
+		else if (currentPickupable.object_index == obj_lightBulb)
         {
             audio_play_sound(snd_lightbulb_pickup, 0, false);
         }
-		else if (currentPickupable.object_index = obj_key)
+		else if (currentPickupable.object_index == obj_key)
         {
             audio_play_sound(snd_key_pickup, 0, false);
         }
-		else if (currentPickupable.object_index = obj_ladder)
+		else if (currentPickupable.object_index == obj_ladder)
         {
             audio_play_sound(snd_ladder_pickup, 0, false);
         }
@@ -143,28 +143,28 @@ else if (!locked)
         var inst = instance_create_layer(x, y, "Instances", inventory);
         inst.RepositionAndScale();
         
-        if (inventory = obj_trash)
+        if (inventory == obj_trash)
         {
             audio_play_sound(snd_trash_pickup, 0, false);
         }
-        else if (inventory = obj_wrench)
+        else if (inventory == obj_wrench)
         {
             audio_play_sound(snd_wrench_pickup, 0, false);
         }
-		else if (inventory = obj_mop)
+		else if (inventory == obj_mop)
         {
             audio_play_sound(snd_mop_pickup, 0, false);
 			alarm[0] = 30;
         }
-		else if (inventory = obj_lightBulb)
+		else if (inventory == obj_lightBulb)
         {
             audio_play_sound(snd_lightbulb_pickup, 0, false);
         }
-        else if (inventory = obj_key)
+        else if (inventory == obj_key)
         {
             audio_play_sound(snd_key_pickup, 0, false);
         }
-		else if (inventory = obj_ladder)
+		else if (inventory == obj_ladder)
         {
             audio_play_sound(snd_ladder_pickup, 0, false);
         }

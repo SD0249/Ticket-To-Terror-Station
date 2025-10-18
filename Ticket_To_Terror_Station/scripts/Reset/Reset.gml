@@ -69,7 +69,7 @@ function ResetOffice() {
 		}
 		
 		// reset time
-		obj_timeManager.Reset();
+		obj_timeManager.StartGame();
 		
 	// reset items in room 
 	var inst = noone;
@@ -77,23 +77,23 @@ function ResetOffice() {
 	if(!instance_exists(obj_key)) {
 		 inst = instance_create_layer(544, 576, "Instances", obj_key);
 		 inst.image_angle = 90;
+         inst.OfficeScale();
 	}
 	
 	if(!instance_exists(obj_mop)) {
 		 inst = instance_create_layer(1280, 288, "Instances", obj_mop);
+         inst.OfficeScale();
 	}
 	
 	if(!instance_exists(obj_wrench)) {
 		 inst = instance_create_layer(544, 640, "Instances", obj_wrench);
 		 inst.image_angle = 180;
+         inst.OfficeScale();
 	}
 	
 	if(!instance_exists(obj_lightBulb)) {
 		 inst = instance_create_layer(192, 384, "Instances", obj_lightBulb);
-	}
-	
-	if(inst != noone) {
-		inst.OfficeScale();
+         inst.OfficeScale();
 	}
 }
 

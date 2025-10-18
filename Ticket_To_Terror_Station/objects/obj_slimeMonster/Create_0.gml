@@ -1,4 +1,4 @@
-moveSpeed = 10;
+moveSpeed = 8;
 
 depth = -100; // Same depth as player
 

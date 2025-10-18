@@ -15,7 +15,7 @@ if (timeUntilMonster > 0)
                 instance_create_layer(room_width, 840, "Instances", obj_slimeMonster); 
                 break;
             case 2: 
-				instance_create_layer(room_width, 840, "Instances", obj_shadowMonster); 
+				instance_create_layer(room_width, 880, "Instances", obj_shadowMonster); 
                  break;
             case 3:
                 break;

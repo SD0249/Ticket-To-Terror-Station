@@ -2,10 +2,10 @@ event_inherited();
 
 Interact = function (_pickUp) 
 {
-    audio_play_sound(snd_crate, 0, false);
-    with(obj_player) 
+    if (playerRef.inventory != obj_ladder) 
 	{
-        id.Hide();
+        audio_play_sound(snd_crate, 0, false);
+        playerRef.Hide();
     }
 	// fade screen to black in .5 sec 
 	// load scene 
