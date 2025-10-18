@@ -1,3 +1,5 @@
+active = true;
+
 inventoryItem = noone;
 
 UpdateItemHub = function(item) 

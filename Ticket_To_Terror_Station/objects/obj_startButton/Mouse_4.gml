@@ -1,12 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-instance_activate_all();
 	
-//var taskM =  instance_find(taskManager, 0);
-
-//taskM.ResetDay();
-//taskM.restartRoom();
-
+// TODO: Reset the day to day one (This is main menu!) 
 
 room_goto(Room_Office);

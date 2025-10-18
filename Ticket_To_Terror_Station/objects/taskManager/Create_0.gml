@@ -25,7 +25,6 @@ restartRoom = function ()
 			
 			if(sanity <= 0) {
 				room_goto(Room_SanityLose);
-				instance_deactivate_all(true);
 				game_restart();
 			}
 			
