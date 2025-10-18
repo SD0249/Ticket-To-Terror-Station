@@ -1,6 +1,8 @@
 // Scales and positions correctly based on room
 if (room == Room_Office)
 {
+	active = true;
+	
     image_xscale = 1.5;
     image_yscale = 1.5;
     y = y_office;
@@ -15,8 +17,14 @@ else if (room == Room_Station)
 else if(room == Room_Win)
 {
 	active = false;
+	newGame = true;
 }
-// Destroy if transitioning to a room other than station or office
+else if(newGame && room == Room_StartMenu)
+{
+	newGame = false;
+	game_restart();
+}
+
 
 // Sets things in range to noone to avoid errors
 //    Note: this should already happen where needed

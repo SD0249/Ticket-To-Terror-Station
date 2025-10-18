@@ -98,7 +98,3 @@ function ResetOffice() {
 	}
 }
 
-function NewGame() {
-	ResetOffice();
-	ResetStation();
-}

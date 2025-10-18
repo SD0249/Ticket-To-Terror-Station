@@ -1,5 +1,7 @@
-// !! Since player is persistent over rooms, this is just for the player not to be drawn in win or lose scenes
+// !! Since player is persistent over rooms, 
+// this is just for the player not to be drawn in win or lose scenes
 active = true;
+newGame = false;	// Decides whether it is a new game or not
 
 // Fields
 currentInteractable = noone;
